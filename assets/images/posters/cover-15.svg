@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="f15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g15)"/>
+  
+<g transform="translate(200 190)">
+  <path d="M-130 40 L130 -60" stroke="#60a5fa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M-110 80 L120 100" stroke="#ef4444" stroke-width="10" stroke-linecap="round"/>
+  <circle cy="-100" r="34" fill="#f8fafc"/>
+  <circle cx="-140" cy="-80" r="3" fill="#fff"/>
+  <circle cx="150" cy="-40" r="2.5" fill="#fff"/>
+</g>
+  <rect width="400" height="600" fill="url(#f15)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Звёздные</text><text x="200" y="276" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">войны:</text><text x="200" y="304" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Империя</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

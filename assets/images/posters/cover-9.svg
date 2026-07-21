@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="f9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g9)"/>
+  
+<g transform="translate(120 80)" font-family="Consolas,monospace" fill="#22c55e">
+  <text x="0" y="0" font-size="28">01001</text>
+  <text x="30" y="45" font-size="28" fill="#4ade80">11010</text>
+  <text x="-10" y="90" font-size="28" fill="#86efac">10110</text>
+  <text x="40" y="135" font-size="28">01101</text>
+  <text x="10" y="180" font-size="28" fill="#bbf7d0">10011</text>
+</g>
+<path d="M200 90 L240 190 L200 290 L160 190 Z" fill="none" stroke="#bbf7d0" stroke-width="4"/>
+
+  <rect width="400" height="600" fill="url(#f9)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Матрица</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

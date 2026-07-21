@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg14" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="fade14" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg14)"/>
+  
+<path d="M40 140 L160 90" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+<path d="M50 160 L150 175" stroke="#ef4444" stroke-width="5" stroke-linecap="round"/>
+<circle cx="100" cy="70" r="18" fill="#f8fafc" opacity="0.9"/>
+<circle cx="35" cy="60" r="1.5" fill="#fff"/><circle cx="170" cy="80" r="2" fill="#fff"/>
+<circle cx="60" cy="200" r="1.5" fill="#cbd5e1"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade14)"/>
+  <text x="100" y="228" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Звёздные</text><text x="100" y="244" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">войны: Империя</text><text x="100" y="260" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">наносит</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>Админ — KINOTOP</title>
+
+  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="../css/variables.css" />
+
+  <link rel="stylesheet" href="../css/animations.css" />
+
+  <link rel="stylesheet" href="../css/grid.css" />
+
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+
+    .admin-fallback { display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px; }
+
+    .admin-fallback__box { background:var(--color-card);border:1px solid rgba(192,132,252,0.35);border-radius:16px;padding:32px;max-width:400px;width:100%;text-align:center; }
+
+    .admin-fallback__box h1 { color:#E50914;margin-bottom:8px; }
+
+    .admin-fallback__box input { width:100%;padding:12px;margin:8px 0;background:var(--color-bg-deep);border:1px solid rgba(192,132,252,0.4);color:#fff;border-radius:8px; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header class="header"></header>
+
+  <main class="page">
+
+    <div class="admin-fallback" id="admin-fallback">
+
+      <div class="admin-fallback__box">
+
+        <h1>KINOTOP Админ</h1>
+
+        <p style="color:#B0B0B0;margin-bottom:16px;">Загрузка панели...</p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="../js/boot.js" data-entry="admin.js"></script>
+
+</body>
+
+</html>
+

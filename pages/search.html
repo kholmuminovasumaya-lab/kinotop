@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Поиск — KINOTOP</title>
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/grid.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="header"></header>
+  <main class="page">
+    <div class="page__header"><h1 class="page__title">Поиск</h1><p class="page__subtitle" id="search-count"></p></div>
+    <div class="search-filters">
+      <input type="search" id="search-query" placeholder="Название, жанр, год..." />
+      <select id="search-genre"><option value="">Все жанры</option></select>
+      <input type="number" id="search-year" placeholder="Год" min="1900" max="2030" />
+      <select id="search-rating"><option value="0">Любой рейтинг</option><option value="7">7+</option><option value="8">8+</option><option value="9">9+</option></select>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </main>
+  <footer class="footer"></footer>
+  <script src="../js/boot.js" data-entry="search-page.js"></script>
+</body>
+</html>

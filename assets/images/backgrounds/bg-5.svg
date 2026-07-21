@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g5)"/>
+  <g transform="translate(960 420) scale(4.2) translate(-100 -110)">
+    
+<path d="M20 180 Q60 120 100 150 Q140 180 180 130 L180 220 L20 220 Z" fill="#d97706"/>
+<path d="M30 200 Q100 160 170 195" fill="none" stroke="#fde68a" stroke-width="2"/>
+<ellipse cx="100" cy="100" rx="55" ry="18" fill="#92400e"/>
+<ellipse cx="100" cy="100" rx="20" ry="8" fill="#1c1917"/>
+
+  </g>
+  <rect width="1920" height="1080" fill="#000" opacity="0.35"/>
+</svg>

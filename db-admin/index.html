@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KINOTOP — База данных</title>
+  <style>
+    :root { --bg:#0a1628; --card:#111f3a; --accent:#E50914; --text:#e8ecf4; --muted:#8b9bb4; --line:rgba(255,255,255,.08); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Segoe UI,system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+    header { padding:20px 24px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    header h1 { margin:0; font-size:1.25rem; }
+    header h1 span { color:var(--accent); }
+    .badge { background:rgba(229,9,20,.15); color:#ff6b6b; padding:4px 10px; border-radius:999px; font-size:.75rem; }
+    main { padding:24px; max-width:1200px; margin:0 auto; }
+    .grid { display:grid; grid-template-columns:220px 1fr; gap:20px; }
+    @media (max-width:768px) { .grid { grid-template-columns:1fr; } }
+    .panel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+    .panel h2 { margin:0 0 12px; font-size:.9rem; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+    .tables { list-style:none; margin:0; padding:0; }
+    .tables li button { width:100%; text-align:left; background:transparent; border:1px solid transparent; color:var(--text); padding:10px 12px; border-radius:8px; cursor:pointer; margin-bottom:4px; }
+    .tables li button:hover, .tables li button.active { background:rgba(229,9,20,.12); border-color:rgba(229,9,20,.35); }
+    .tables small { color:var(--muted); }
+    table { width:100%; border-collapse:collapse; font-size:.85rem; }
+    th, td { border-bottom:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; word-break:break-word; }
+    th { color:var(--muted); font-weight:600; }
+    .toolbar { display:flex; gap:8px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+    .toolbar button, .toolbar a { background:#1a2d52; border:1px solid var(--line); color:var(--text); padding:8px 12px; border-radius:8px; cursor:pointer; text-decoration:none; font-size:.85rem; }
+    .toolbar button:hover, .toolbar a:hover { border-color:var(--accent); }
+    .status { color:var(--muted); font-size:.85rem; }
+    pre { margin:0; white-space:pre-wrap; max-height:120px; overflow:auto; font-size:.75rem; color:#cbd5e1; }
+    .error { color:#ff6b6b; padding:12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>KINOTOP</span> · База данных</h1>
+    <div>
+      <span class="badge" id="engine">SQLite</span>
+      <a href="../index.html" style="color:#8b9bb4;margin-left:12px;">← На сайт</a>
+    </div>
+  </header>
+  <main>
+    <div class="grid">
+      <aside class="panel">
+        <h2>Таблицы</h2>
+        <ul class="tables" id="tables"></ul>
+      </aside>
+      <section class="panel">
+        <div class="toolbar">
+          <strong id="table-title">Выберите таблицу</strong>
+          <span class="status" id="status"></span>
+          <button type="button" id="prev-btn" hidden>← Назад</button>
+          <button type="button" id="next-btn" hidden>Вперёд →</button>
+        </div>
+        <div id="content"><p class="status">Загрузка...</p></div>
+      </section>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var currentTable = '';
+      var page = 1;
+      var limit = 30;
+      var total = 0;
+
+      function api(path) {
+        return fetch(path).then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        });
+      }
+
+      function loadTables() {
+        return api('/api/db/tables').then(function (data) {
+          var ul = document.getElementById('tables');
+          ul.innerHTML = '';
+          (data.tables || []).forEach(function (t) {
+            var li = document.createElement('li');
+            var btn = document.createElement('button');
+            btn.innerHTML = t.name + ' <small>(' + t.rows + ')</small>';
+            btn.onclick = function () {
+              currentTable = t.name;
+              page = 1;
+              document.querySelectorAll('.tables button').forEach(function (b) { b.classList.remove('active'); });
+              btn.classList.add('active');
+              loadTable();
+            };
+            li.appendChild(btn);
+            ul.appendChild(li);
+          });
+        });
+      }
+
+      function formatCell(key, value) {
+        if (key === 'data' || key === 'value') {
+          try {
+            var parsed = JSON.parse(value);
+            return '<pre>' + JSON.stringify(parsed, null, 2) + '</pre>';
+          } catch (e) {
+            return '<pre>' + String(value || '') + '</pre>';
+          }
+        }
+        return String(value == null ? '' : value);
+      }
+
+      function loadTable() {
+        if (!currentTable) return;
+        document.getElementById('table-title').textContent = currentTable;
+        document.getElementById('status').textContent = 'Загрузка...';
+        api('/api/db/table/' + currentTable + '?page=' + page + '&limit=' + limit)
+          .then(function (data) {
+            total = data.total || 0;
+            var rows = data.rows || [];
+            document.getElementById('status').textContent =
+              'Строк: ' + total + ' · Страница ' + page + ' из ' + Math.max(1, Math.ceil(total / limit));
+            document.getElementById('prev-btn').hidden = page <= 1;
+            document.getElementById('next-btn').hidden = page * limit >= total;
+
+            if (!rows.length) {
+              document.getElementById('content').innerHTML = '<p class="status">Таблица пуста</p>';
+              return;
+            }
+
+            var cols = Object.keys(rows[0]);
+            var html = '<table><thead><tr>' + cols.map(function (c) { return '<th>' + c + '</th>'; }).join('') + '</tr></thead><tbody>';
+            rows.forEach(function (row) {
+              html += '<tr>' + cols.map(function (c) { return '<td>' + formatCell(c, row[c]) + '</td>'; }).join('') + '</tr>';
+            });
+            html += '</tbody></table>';
+            document.getElementById('content').innerHTML = html;
+          })
+          .catch(function (err) {
+            document.getElementById('content').innerHTML = '<p class="error">' + err.message + '</p>';
+          });
+      }
+
+      document.getElementById('prev-btn').onclick = function () { if (page > 1) { page--; loadTable(); } };
+      document.getElementById('next-btn').onclick = function () { if (page * limit < total) { page++; loadTable(); } };
+
+      api('/api/health').then(function (h) {
+        document.getElementById('engine').textContent = (h.engine || 'sqlite').toUpperCase() + ' · ' + (h.db || 'kinobro.db');
+        return loadTables();
+      }).then(function () {
+        var first = document.querySelector('.tables button');
+        if (first) first.click();
+      }).catch(function (err) {
+        document.getElementById('content').innerHTML = '<p class="error">Сервер БД недоступен. Запустите: python start.py</p>';
+      });
+    })();
+  </script>
+</body>
+</html>

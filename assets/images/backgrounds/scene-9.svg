@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg9)"/>
+  <g transform="translate(760 140) scale(2.1)">
+    
+<g transform="translate(120 80)" font-family="Consolas,monospace" fill="#22c55e">
+  <text x="0" y="0" font-size="28">01001</text>
+  <text x="30" y="45" font-size="28" fill="#4ade80">11010</text>
+  <text x="-10" y="90" font-size="28" fill="#86efac">10110</text>
+  <text x="40" y="135" font-size="28">01101</text>
+  <text x="10" y="180" font-size="28" fill="#bbf7d0">10011</text>
+</g>
+<path d="M200 90 L240 190 L200 290 L160 190 Z" fill="none" stroke="#bbf7d0" stroke-width="4"/>
+
+  </g>
+  <rect width="1920" height="1080" fill="#000" opacity="0.4"/>
+</svg>

@@ -1,0 +1,29 @@
+# Secrets
+.env
+**/.env
+*.pem
+*.key
+
+# Local DB & runtime data
+data/kinobro.db
+data/kinobro.db-*
+data/telegram_config.json
+data/receipts/
+data/*.db
+
+# OS / junk
+Thumbs.db
+Desktop.ini
+*.lnk
+_diag_*
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/

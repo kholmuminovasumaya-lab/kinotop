@@ -1,0 +1,6 @@
+{
+  "bot_token": "",
+  "admin_chat_id": "",
+  "auto_approve": false,
+  "auto_approve_delay_sec": 3
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="fade6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg6)"/>
+  
+<path d="M55 150 L100 95 L145 150 Z" fill="#b91c1c"/>
+<rect x="68" y="150" width="64" height="55" fill="#fef3c7"/>
+<rect x="90" y="170" width="18" height="35" fill="#78350f"/>
+<rect x="75" y="158" width="14" height="14" fill="#38bdf8"/>
+<rect x="112" y="158" width="14" height="14" fill="#38bdf8"/>
+<circle cx="40" cy="70" r="3" fill="#fff"/><circle cx="150" cy="60" r="2" fill="#fff"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade6)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Один дома</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#fca5a5" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

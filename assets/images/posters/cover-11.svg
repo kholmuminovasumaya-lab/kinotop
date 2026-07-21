@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g11" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="f11" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g11)"/>
+  
+<g transform="translate(200 180)">
+  <circle r="70" fill="none" stroke="#ef4444" stroke-width="8"/>
+  <path d="M-55 0 Q0 -70 55 0 Q0 70 -55 0" fill="none" stroke="#22d3ee" stroke-width="6"/>
+  <rect y="110" x="-120" width="240" height="14" fill="#a855f7"/>
+</g>
+<text x="200" y="70" text-anchor="middle" fill="#f472b6" font-family="Impact,Arial Black,sans-serif" font-size="36">1983</text>
+
+  <rect width="400" height="600" fill="url(#f11)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Очень</text><text x="200" y="276" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">странные дела</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="fade16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg16)"/>
+  
+<path d="M40 150 L160 150 L150 180 L50 180 Z" fill="#e2e8f0"/>
+<rect x="70" y="120" width="12" height="30" fill="#94a3b8"/>
+<rect x="100" y="110" width="12" height="40" fill="#94a3b8"/>
+<rect x="125" y="125" width="10" height="25" fill="#94a3b8"/>
+<path d="M20 190 Q100 170 180 200 L180 230 L20 230 Z" fill="#0284c7"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade16)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Титаник</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

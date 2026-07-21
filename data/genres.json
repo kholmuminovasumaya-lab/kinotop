@@ -1,0 +1,14 @@
+{
+  "genres": [
+    { "id": "action", "name": "Боевики", "icon": "⚔️" },
+    { "id": "comedy", "name": "Комедии", "icon": "😂" },
+    { "id": "horror", "name": "Ужасы", "icon": "👻" },
+    { "id": "scifi", "name": "Фантастика", "icon": "🚀" },
+    { "id": "drama", "name": "Драмы", "icon": "🎭" },
+    { "id": "animation", "name": "Мультфильмы", "icon": "🎨" },
+    { "id": "series", "name": "Сериалы", "icon": "📺" },
+    { "id": "thriller", "name": "Триллеры", "icon": "🔪" },
+    { "id": "fantasy", "name": "Фэнтези", "icon": "🧙" },
+    { "id": "romance", "name": "Мелодрамы", "icon": "💕" }
+  ]
+}

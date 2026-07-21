@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="fade5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg5)"/>
+  
+<path d="M20 180 Q60 120 100 150 Q140 180 180 130 L180 220 L20 220 Z" fill="#d97706"/>
+<path d="M30 200 Q100 160 170 195" fill="none" stroke="#fde68a" stroke-width="2"/>
+<ellipse cx="100" cy="100" rx="55" ry="18" fill="#92400e"/>
+<ellipse cx="100" cy="100" rx="20" ry="8" fill="#1c1917"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade5)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Дюна</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

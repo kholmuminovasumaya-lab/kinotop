@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="fade2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg2)"/>
+  
+<circle cx="100" cy="110" r="42" fill="#0f172a" stroke="#a78bfa" stroke-width="3"/>
+<circle cx="100" cy="110" r="18" fill="#000"/>
+<ellipse cx="100" cy="110" rx="70" ry="16" fill="none" stroke="#f59e0b" stroke-width="3"/>
+<circle cx="40" cy="60" r="2" fill="#fff"/><circle cx="160" cy="70" r="1.5" fill="#fff"/>
+<circle cx="55" cy="160" r="1.5" fill="#fff"/><circle cx="150" cy="150" r="2" fill="#e0e7ff"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade2)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Интерстеллар</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

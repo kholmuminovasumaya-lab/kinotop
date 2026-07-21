@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="fade9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg9)"/>
+  
+<circle cx="100" cy="85" r="35" fill="#fde047"/>
+<path d="M20 170 Q100 130 180 170 L180 230 L20 230 Z" fill="#b45309"/>
+<path d="M70 175 Q100 150 130 175" fill="#78350f"/>
+<circle cx="95" cy="165" r="6" fill="#fef3c7"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade9)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Король Лев</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

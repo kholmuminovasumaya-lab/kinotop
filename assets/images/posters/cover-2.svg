@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1026"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="f2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g2)"/>
+  
+<g transform="translate(200 190)">
+  <circle r="90" fill="none" stroke="#67e8f9" stroke-width="3" opacity=".6"/>
+  <circle r="55" fill="none" stroke="#c4b5fd" stroke-width="3"/>
+  <path d="M0 -70 L18 0 L0 70 L-18 0 Z" fill="#fbbf24"/>
+  <path d="M-120 110 Q0 40 120 110" fill="none" stroke="#64748b" stroke-width="6"/>
+</g>
+  <rect width="400" height="600" fill="url(#f2)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Начало</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

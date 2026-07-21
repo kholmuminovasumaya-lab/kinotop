@@ -1,0 +1,2006 @@
+{
+  "movies": [
+    {
+      "id": 2,
+      "title": "Начало",
+      "description": "Дом Кобб — талантливый вор, лучший из лучших в опасном искусстве извлечения — кражи ценных секретов из глубин подсознания во время сна.",
+      "year": 2010,
+      "genres": [
+        "scifi",
+        "action",
+        "thriller"
+      ],
+      "rating": 8.8,
+      "duration": 148,
+      "poster": "assets/images/posters/real-2.jpg",
+      "background": "assets/images/backgrounds/real-2.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=85Zz1CCXyDI",
+      "cast": [
+        "Леонардо ДиКаприо",
+        "Марион Котийяр",
+        "Том Харди",
+        "Эллен Пейдж"
+      ],
+      "director": "Кристофер Нолан",
+      "country": "США",
+      "quality": "4K",
+      "age": "12+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=85Zz1CCXyDI"
+    },
+    {
+      "id": 3,
+      "title": "Интерстеллар",
+      "description": "Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину в путешествие, чтобы превзойти ограничения человеческих космических путешествий.",
+      "year": 2014,
+      "genres": [
+        "scifi",
+        "drama"
+      ],
+      "rating": 8.6,
+      "duration": 169,
+      "poster": "assets/images/posters/real-3.jpg",
+      "background": "assets/images/backgrounds/real-3.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=qcPfI0y7wRU",
+      "cast": [
+        "Мэттью Макконахи",
+        "Энн Хэтэуэй",
+        "Джессика Честейн",
+        "Майкл Кейн"
+      ],
+      "director": "Кристофер Нолан",
+      "country": "США",
+      "quality": "4K",
+      "age": "12+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=qcPfI0y7wRU"
+    },
+    {
+      "id": 4,
+      "title": "Джокер",
+      "description": "История становления одного из величайших злодеев комиксов DC — Артура Флека, человека, которого общество отвергло и загнало в угол.",
+      "year": 2019,
+      "genres": [
+        "drama",
+        "thriller"
+      ],
+      "rating": 8.4,
+      "duration": 122,
+      "poster": "assets/images/posters/real-4.jpg",
+      "background": "assets/images/backgrounds/real-4.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=zAg7W2ILvXQ",
+      "cast": [
+        "Хоакин Феникс",
+        "Роберт Де Ниро",
+        "Зэзи Битц"
+      ],
+      "director": "Тодд Филлипс",
+      "country": "США",
+      "quality": "4K",
+      "age": "18+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=zAg7W2ILvXQ"
+    },
+    {
+      "id": 5,
+      "title": "Паразиты",
+      "description": "Все члены семьи Ки живут в полуподвале и перебиваются случайными подработками. Случайно сын семьи получает работу репетитора в богатой семье Пак.",
+      "year": 2019,
+      "genres": [
+        "drama",
+        "thriller",
+        "comedy"
+      ],
+      "rating": 8.5,
+      "duration": 132,
+      "poster": "assets/images/posters/real-5.jpg",
+      "background": "assets/images/backgrounds/real-5.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=n2-DvmDHOH8",
+      "cast": [
+        "Сон Кан-хо",
+        "Ли Сон-гюн",
+        "Чо Ё-джон"
+      ],
+      "director": "Пон Чжун-хо",
+      "country": "Южная Корея",
+      "quality": "4K",
+      "age": "16+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=n2-DvmDHOH8"
+    },
+    {
+      "id": 6,
+      "title": "Дюна",
+      "description": "Наследник знаменитого дома Атрейдесов отправляется вместе с семьёй на одну из самых опасных планет во Вселенной — Арракис.",
+      "year": 2021,
+      "genres": [
+        "scifi",
+        "fantasy",
+        "action"
+      ],
+      "rating": 8.0,
+      "duration": 155,
+      "poster": "assets/images/posters/real-6.jpg",
+      "background": "assets/images/backgrounds/real-6.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=DOlTmIhEsg0",
+      "cast": [
+        "Тимоти Шаламе",
+        "Ребекка Фергюсон",
+        "Оскар Айзек",
+        "Зендая"
+      ],
+      "director": "Дени Вильнёв",
+      "country": "США",
+      "quality": "4K",
+      "age": "12+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=DOlTmIhEsg0"
+    },
+    {
+      "id": 7,
+      "title": "Один дома",
+      "description": "Американское семейство отправляется из Чикаго в Европу, но в спешке сборов забывает взять с собой одного из своих детей — 8-летнего Кевина.",
+      "year": 1990,
+      "genres": [
+        "comedy",
+        "animation"
+      ],
+      "rating": 7.6,
+      "duration": 103,
+      "poster": "assets/images/posters/real-7.jpg",
+      "background": "assets/images/backgrounds/real-7.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=2jzfcTuax9s",
+      "cast": [
+        "Маколей Калкин",
+        "Джо Пеши",
+        "Кэтрин О'Хара"
+      ],
+      "director": "Крис Коламбус",
+      "country": "США",
+      "quality": "HD",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=2jzfcTuax9s"
+    },
+    {
+      "id": 8,
+      "title": "Сияние",
+      "description": "Джек Торранс с женой и сыном приезжает в горный отель, чтобы работать смотрителем в зимний сезон. Он надеется спокойно поработать и написать пьесу.",
+      "year": 1980,
+      "genres": [
+        "horror",
+        "thriller"
+      ],
+      "rating": 8.4,
+      "duration": 146,
+      "poster": "assets/images/posters/real-8.jpg",
+      "background": "assets/images/backgrounds/real-8.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=5SbD3W7bZQs",
+      "cast": [
+        "Джек Николсон",
+        "Шелли Дюваль",
+        "Дэнни Ллойд"
+      ],
+      "director": "Стэнли Кубрик",
+      "country": "США",
+      "quality": "4K",
+      "age": "18+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=5SbD3W7bZQs"
+    },
+    {
+      "id": 9,
+      "title": "Матрица",
+      "description": "Жизнь Томаса Андерсона разделена на две части: днём он — самый обычный офисный работник, а ночью — хакер Нео.",
+      "year": 1999,
+      "genres": [
+        "scifi",
+        "action"
+      ],
+      "rating": 8.7,
+      "duration": 136,
+      "poster": "assets/images/posters/real-9.jpg",
+      "background": "assets/images/backgrounds/real-9.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=YihPA42fdQ8",
+      "cast": [
+        "Киану Ривз",
+        "Лоренс Фишберн",
+        "Кэрри-Энн Мосс"
+      ],
+      "director": "Лана и Лилли Вачовски",
+      "country": "США",
+      "quality": "4K",
+      "age": "16+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=YihPA42fdQ8"
+    },
+    {
+      "id": 10,
+      "title": "Король Лев",
+      "description": "Величественный лев Муфаса правит саванной. Его новорождённый сын Симба — наследник престола. Но завистливый дядя Шрам замышляет узурпировать трон.",
+      "year": 1994,
+      "genres": [
+        "animation",
+        "drama"
+      ],
+      "rating": 8.5,
+      "duration": 88,
+      "poster": "assets/images/posters/real-10.jpg",
+      "background": "assets/images/backgrounds/real-10.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=iOhL22vL1Ho",
+      "cast": [
+        "Мэттью Бродерик",
+        "Джереми Айронс",
+        "Джеймс Эрл Джонс"
+      ],
+      "director": "Роджер Аллерс, Роб Минкофф",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=iOhL22vL1Ho"
+    },
+    {
+      "id": 11,
+      "title": "Очень странные дела",
+      "description": "1980-е годы, тихий провинциальный американский городок. Благоприятное течение местной жизни нарушает загадочное исчезновение подростка.",
+      "year": 2016,
+      "genres": [
+        "series",
+        "scifi",
+        "horror"
+      ],
+      "rating": 8.7,
+      "duration": 50,
+      "poster": "assets/images/posters/real-11.jpg",
+      "background": "assets/images/backgrounds/real-11.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=mM7eBD2UIcY",
+      "cast": [
+        "Милли Бобби Браун",
+        "Финн Вулфард",
+        "Дэвид Харбор"
+      ],
+      "director": "Братья Даффер",
+      "country": "США",
+      "quality": "4K",
+      "age": "16+",
+      "type": "series",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=mM7eBD2UIcY"
+    },
+    {
+      "id": 12,
+      "title": "Во все тяжкие",
+      "description": "Школьный учитель химии Уолтер Уайт узнаёт, что болен раком. Чтобы обеспечить семью, он начинает варить метамфетамин.",
+      "year": 2008,
+      "genres": [
+        "series",
+        "drama",
+        "thriller"
+      ],
+      "rating": 9.5,
+      "duration": 47,
+      "poster": "assets/images/posters/real-12.jpg",
+      "background": "assets/images/backgrounds/real-12.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=EpJPgfMkxCM",
+      "cast": [
+        "Брайан Крэнстон",
+        "Аарон Пол",
+        "Анна Ганн"
+      ],
+      "director": "Винс Гиллиган",
+      "country": "США",
+      "quality": "4K",
+      "age": "18+",
+      "type": "series",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=EpJPgfMkxCM"
+    },
+    {
+      "id": 13,
+      "title": "Мстители: Финал",
+      "description": "Оставшиеся в живых члены команды Мстителей и их союзники должны разработать новый план, который поможет противостоять разрушительным действиям могущественного титана Таноса.",
+      "year": 2019,
+      "genres": [
+        "action",
+        "scifi",
+        "fantasy"
+      ],
+      "rating": 8.4,
+      "duration": 181,
+      "poster": "assets/images/posters/real-13.jpg",
+      "background": "assets/images/backgrounds/real-13.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=0TlC6N3vX8o",
+      "cast": [
+        "Роберт Дауни мл.",
+        "Крис Эванс",
+        "Скарлетт Йоханссон",
+        "Крис Хемсворт"
+      ],
+      "director": "Энтони и Джо Руссо",
+      "country": "США",
+      "quality": "4K",
+      "age": "12+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=0TlC6N3vX8o"
+    },
+    {
+      "id": 14,
+      "title": "1+1",
+      "description": "Пострадав в результате несчастного случая, аристократ Филипп нанимает в сиделки человека, который менее всего подходит для этой работы — молодого жителя предместья Дрисса.",
+      "year": 2011,
+      "genres": [
+        "comedy",
+        "drama"
+      ],
+      "rating": 8.8,
+      "duration": 112,
+      "poster": "assets/images/posters/real-14.jpg",
+      "background": "assets/images/backgrounds/real-14.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=1NeLdtpFfUc",
+      "cast": [
+        "Франсуа Клюзе",
+        "Омар Си"
+      ],
+      "director": "Оливье Накаш, Эрик Толедано",
+      "country": "Франция",
+      "quality": "HD",
+      "age": "16+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=1NeLdtpFfUc"
+    },
+    {
+      "id": 15,
+      "title": "Звёздные войны: Империя наносит ответный удар",
+      "description": "Империя наносит ответный удар. Люк Скайуокер, принцесса Лея и Хан Соло вынуждены скрываться от преследования имперских войск.",
+      "year": 1980,
+      "genres": [
+        "scifi",
+        "action",
+        "fantasy"
+      ],
+      "rating": 8.7,
+      "duration": 124,
+      "poster": "assets/images/posters/real-15.jpg",
+      "background": "assets/images/backgrounds/real-15.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=6G8kMfzgeLo",
+      "cast": [
+        "Марк Хэмилл",
+        "Харрисон Форд",
+        "Кэрри Фишер"
+      ],
+      "director": "Ирвин Кершнер",
+      "country": "США",
+      "quality": "4K",
+      "age": "12+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=6G8kMfzgeLo"
+    },
+    {
+      "id": 16,
+      "title": "Оно",
+      "description": "Семеро подростков сталкиваются с древним злом по имени Пеннивайз, которое принимает облик клоуна и охотится на детей в городе Дерри.",
+      "year": 2017,
+      "genres": [
+        "horror",
+        "thriller"
+      ],
+      "rating": 7.3,
+      "duration": 135,
+      "poster": "assets/images/posters/real-16.jpg",
+      "background": "assets/images/backgrounds/real-16.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=hAUTsKjVQmk",
+      "cast": [
+        "Билл Скарсгард",
+        "Джейден Либерер",
+        "София Лиллис"
+      ],
+      "director": "Энди Мускетти",
+      "country": "США",
+      "quality": "4K",
+      "age": "18+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=hAUTsKjVQmk"
+    },
+    {
+      "id": 17,
+      "title": "Титаник",
+      "description": "Молодые влюблённые Джек и Роза встречаются на борту легендарного лайнера «Титаник», который вскоре столкнётся с айсбергом.",
+      "year": 1997,
+      "genres": [
+        "romance",
+        "drama"
+      ],
+      "rating": 7.9,
+      "duration": 194,
+      "poster": "assets/images/posters/real-17.jpg",
+      "background": "assets/images/backgrounds/real-17.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=7N9qRdqkHrc",
+      "cast": [
+        "Леонардо ДиКаприо",
+        "Кейт Уинслет",
+        "Билли Зейн"
+      ],
+      "director": "Джеймс Кэмерон",
+      "country": "США",
+      "quality": "4K",
+      "age": "12+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=7N9qRdqkHrc"
+    },
+    {
+      "id": 18,
+      "title": "Игра престолов",
+      "description": "К концу подходит время благоденствия, и лето, длившееся почти десятилетие, угасает. Вокруг центрального Перекрёстка сгущаются тучи.",
+      "year": 2011,
+      "genres": [
+        "series",
+        "fantasy",
+        "drama"
+      ],
+      "rating": 9.2,
+      "duration": 60,
+      "poster": "assets/images/posters/real-18.jpg",
+      "background": "assets/images/backgrounds/real-18.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=Y8eeofv2_S8",
+      "cast": [
+        "Питер Динклэйдж",
+        "Эмилия Кларк",
+        "Кит Харингтон"
+      ],
+      "director": "Дэвид Бениофф, Д. Б. Уайсс",
+      "country": "США",
+      "quality": "4K",
+      "age": "18+",
+      "type": "series",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=Y8eeofv2_S8"
+    },
+    {
+      "id": 19,
+      "title": "Холодное сердце",
+      "description": "Принцесса Эльза случайно навлекает на королевство вечную зиму.",
+      "year": 2013,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.5,
+      "duration": 102,
+      "poster": "assets/images/posters/real-19.jpg",
+      "background": "assets/images/backgrounds/real-19.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=Tbq4on_uG2w",
+      "cast": [
+        "Идина Мензел",
+        "Кристин Белл"
+      ],
+      "director": "Крис Бак, Дженнифер Ли",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=Tbq4on_uG2w"
+    },
+    {
+      "id": 20,
+      "title": "Моана",
+      "description": "Юная Моана отправляется за океан, чтобы спасти свой остров.",
+      "year": 2016,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.6,
+      "duration": 107,
+      "poster": "assets/images/posters/real-20.jpg",
+      "background": "assets/images/backgrounds/real-20.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=LKFuXETZUsI",
+      "cast": [
+        "Аулии Кравальо",
+        "Дуэйн Джонсон"
+      ],
+      "director": "Рон Клементс, Джон Маскер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=LKFuXETZUsI"
+    },
+    {
+      "id": 21,
+      "title": "Рататуй",
+      "description": "Крысёнок Реми мечтает стать шеф-поваром в Париже.",
+      "year": 2007,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.0,
+      "duration": 111,
+      "poster": "assets/images/posters/real-21.jpg",
+      "background": "assets/images/backgrounds/real-21.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=1yKqLQCQUvA",
+      "cast": [
+        "Паттон Освальт",
+        "Иан Холм"
+      ],
+      "director": "Брэд Бёрд",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=1yKqLQCQUvA"
+    },
+    {
+      "id": 22,
+      "title": "Вверх",
+      "description": "Старик Карл улетает на воздушных шарах к водопаду мечты.",
+      "year": 2009,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.2,
+      "duration": 96,
+      "poster": "assets/images/posters/real-22.jpg",
+      "background": "assets/images/backgrounds/real-22.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=ORFWdXl_zJ4",
+      "cast": [
+        "Эдвард Аснер",
+        "Джордан Нагай"
+      ],
+      "director": "Пит Доктер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=ORFWdXl_zJ4"
+    },
+    {
+      "id": 23,
+      "title": "История игрушек",
+      "description": "Игрушки оживают, когда люди не смотрят.",
+      "year": 1995,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.3,
+      "duration": 81,
+      "poster": "assets/images/posters/real-23.jpg",
+      "background": "assets/images/backgrounds/real-23.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=v-pjgY48jPM",
+      "cast": [
+        "Том Хэнкс",
+        "Тим Аллен"
+      ],
+      "director": "Джон Лассетер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=v-pjgY48jPM"
+    },
+    {
+      "id": 24,
+      "title": "Шрек",
+      "description": "Огр Шрек должен спасти принцессу Фиону.",
+      "year": 2001,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.1,
+      "duration": 90,
+      "poster": "assets/images/posters/real-24.jpg",
+      "background": "assets/images/backgrounds/real-24.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=CwXOrWvPB0I",
+      "cast": [
+        "Майк Майерс",
+        "Эдди Мерфи"
+      ],
+      "director": "Эндрю Адамсон",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=CwXOrWvPB0I"
+    },
+    {
+      "id": 25,
+      "title": "Как приручить дракона",
+      "description": "Викинг Иккинг дружится с драконом Беззубиком.",
+      "year": 2010,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.1,
+      "duration": 98,
+      "poster": "assets/images/posters/real-25.jpg",
+      "background": "assets/images/backgrounds/real-25.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=oEiHDZJpAiA",
+      "cast": [
+        "Джей Барушель",
+        "Джерард Батлер"
+      ],
+      "director": "Крис Сандерс, Дин ДеБлуа",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=oEiHDZJpAiA"
+    },
+    {
+      "id": 26,
+      "title": "Корпорация монстров",
+      "description": "Монстры пугают детей, чтобы добывать крики как энергию.",
+      "year": 2001,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.0,
+      "duration": 92,
+      "poster": "assets/images/posters/real-26.jpg",
+      "background": "assets/images/backgrounds/real-26.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=8oBxqQY3Q0g",
+      "cast": [
+        "Джон Гудмен",
+        "Билли Кристал"
+      ],
+      "director": "Пит Доктер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=8oBxqQY3Q0g"
+    },
+    {
+      "id": 27,
+      "title": "В поисках Немо",
+      "description": "Рыбка-клоун Марлин ищет пропавшего сына Немо.",
+      "year": 2003,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.1,
+      "duration": 100,
+      "poster": "assets/images/posters/real-27.jpg",
+      "background": "assets/images/backgrounds/real-27.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=wZdpNglLbt8",
+      "cast": [
+        "Альберт Брукс",
+        "Эллен Дедженерес"
+      ],
+      "director": "Эндрю Стэнтон",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=wZdpNglLbt8"
+    },
+    {
+      "id": 28,
+      "title": "Зверополис",
+      "description": "Крольчиха-полицейский и лис-мошенник расследуют дело.",
+      "year": 2016,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.0,
+      "duration": 108,
+      "poster": "assets/images/posters/real-28.jpg",
+      "background": "assets/images/backgrounds/real-28.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=jWM0ct-OLsM",
+      "cast": [
+        "Джиннифер Гудвин",
+        "Джейсон Бейтман"
+      ],
+      "director": "Байрон Ховард, Рич Мур",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=jWM0ct-OLsM"
+    },
+    {
+      "id": 29,
+      "title": "Головоломка",
+      "description": "Эмоции Райли помогают ей пережить переезд.",
+      "year": 2015,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.1,
+      "duration": 95,
+      "poster": "assets/images/posters/real-29.jpg",
+      "background": "assets/images/backgrounds/real-29.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=seMwpP0yeu4",
+      "cast": [
+        "Эми Полер",
+        "Филлис Смит"
+      ],
+      "director": "Пит Доктер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=seMwpP0yeu4"
+    },
+    {
+      "id": 30,
+      "title": "Тайна Коко",
+      "description": "Мальчик Мигель попадает в Страну мёртвых.",
+      "year": 2017,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.4,
+      "duration": 105,
+      "poster": "assets/images/posters/real-30.jpg",
+      "background": "assets/images/backgrounds/real-30.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=Rvr68u6k5sI",
+      "cast": [
+        "Энтони Гонсалес",
+        "Гаэль Гарсиа Берналь"
+      ],
+      "director": "Ли Анкрич",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=Rvr68u6k5sI"
+    },
+    {
+      "id": 31,
+      "title": "Суперсемейка",
+      "description": "Семья супергероев возвращается к подвигам.",
+      "year": 2004,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.0,
+      "duration": 115,
+      "poster": "assets/images/posters/real-31.jpg",
+      "background": "assets/images/backgrounds/real-31.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
+      "cast": [
+        "Крейг Т. Нельсон",
+        "Холли Хантер"
+      ],
+      "director": "Брэд Бёрд",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=QdBZY2fkU-0"
+    },
+    {
+      "id": 32,
+      "title": "ВАЛЛ·И",
+      "description": "Маленький робот находит любовь среди мусора Земли.",
+      "year": 2008,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.4,
+      "duration": 98,
+      "poster": "assets/images/posters/real-32.jpg",
+      "background": "assets/images/backgrounds/real-32.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=8-_9n5IUYmk",
+      "cast": [
+        "Бен Бертт",
+        "Элисса Найт"
+      ],
+      "director": "Эндрю Стэнтон",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=8-_9n5IUYmk"
+    },
+    {
+      "id": 33,
+      "title": "Кунг-фу Панда",
+      "description": "Панда По становится Воином Дракона.",
+      "year": 2008,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.6,
+      "duration": 92,
+      "poster": "assets/images/posters/real-33.jpg",
+      "background": "assets/images/backgrounds/real-33.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=PXi3Mv6KMzY",
+      "cast": [
+        "Джек Блэк",
+        "Дэстин Хоффман"
+      ],
+      "director": "Марк Осборн, Джон Стивенсон",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=PXi3Mv6KMzY"
+    },
+    {
+      "id": 34,
+      "title": "Мадагаскар",
+      "description": "Звери из зоопарка оказываются на Мадагаскаре.",
+      "year": 2005,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 6.9,
+      "duration": 86,
+      "poster": "assets/images/posters/real-34.jpg",
+      "background": "assets/images/backgrounds/real-34.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=dm-egmDYmMw",
+      "cast": [
+        "Бен Стиллер",
+        "Крис Рок"
+      ],
+      "director": "Эрик Дарнелл, Том МакГрат",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=dm-egmDYmMw"
+    },
+    {
+      "id": 35,
+      "title": "Ледниковый период",
+      "description": "Мамонт, ленивец и саблезуб спасают человеческого малыша.",
+      "year": 2002,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.5,
+      "duration": 81,
+      "poster": "assets/images/posters/real-35.jpg",
+      "background": "assets/images/backgrounds/real-35.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=cMfeK8uJo48",
+      "cast": [
+        "Рэй Романо",
+        "Джон Легуизамо"
+      ],
+      "director": "Крис Уэдж",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=cMfeK8uJo48"
+    },
+    {
+      "id": 36,
+      "title": "Гадкий я",
+      "description": "Злодей Грю удочеряет трёх девочек.",
+      "year": 2010,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.6,
+      "duration": 95,
+      "poster": "assets/images/posters/real-36.jpg",
+      "background": "assets/images/backgrounds/real-36.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=sUkZJtDClFQ",
+      "cast": [
+        "Стив Карелл",
+        "Джейсон Сигел"
+      ],
+      "director": "Пьер Коффен, Крис Рено",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=sUkZJtDClFQ"
+    },
+    {
+      "id": 37,
+      "title": "Миньоны",
+      "description": "Жёлтые миньоны ищут самого злого босса.",
+      "year": 2015,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 6.4,
+      "duration": 91,
+      "poster": "assets/images/posters/real-37.jpg",
+      "background": "assets/images/backgrounds/real-37.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=SvKmJe_6R6E",
+      "cast": [
+        "Сандра Буллок",
+        "Джон Хэмм"
+      ],
+      "director": "Пьер Коффен, Кайл Балда",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=SvKmJe_6R6E"
+    },
+    {
+      "id": 38,
+      "title": "Тачки",
+      "description": "Гоночный болид Молния Маккуин застревает в Радиатор-Спрингс.",
+      "year": 2006,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.1,
+      "duration": 117,
+      "poster": "assets/images/posters/real-38.jpg",
+      "background": "assets/images/backgrounds/real-38.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=SbXIj2T-_uk",
+      "cast": [
+        "Оуэн Уилсон",
+        "Пол Ньюман"
+      ],
+      "director": "Джон Лассетер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=SbXIj2T-_uk"
+    },
+    {
+      "id": 39,
+      "title": "Кот в сапогах",
+      "description": "Легендарный кот отправляется за волшебными бобами.",
+      "year": 2011,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 6.6,
+      "duration": 90,
+      "poster": "assets/images/posters/real-39.jpg",
+      "background": "assets/images/backgrounds/real-39.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=55jk7Jw_xcc",
+      "cast": [
+        "Антонио Бандерас",
+        "Сальма Хайек"
+      ],
+      "director": "Крис Миллер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=55jk7Jw_xcc"
+    },
+    {
+      "id": 40,
+      "title": "Рио",
+      "description": "Синий ара Блу летит в Рио найти пару.",
+      "year": 2011,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 6.9,
+      "duration": 96,
+      "poster": "assets/images/posters/real-40.jpg",
+      "background": "assets/images/backgrounds/real-40.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=P1FAbZySfAM",
+      "cast": [
+        "Джесси Айзенберг",
+        "Энн Хэтэуэй"
+      ],
+      "director": "Карлус Салданья",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=P1FAbZySfAM"
+    },
+    {
+      "id": 41,
+      "title": "Энканто",
+      "description": "Семья Мадригаль, где у всех есть волшебный дар — кроме Мирабель.",
+      "year": 2021,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.2,
+      "duration": 102,
+      "poster": "assets/images/posters/real-41.jpg",
+      "background": "assets/images/backgrounds/real-41.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=CaimKeDcudE",
+      "cast": [
+        "Стефани Беатрис",
+        "Мария Сесилия Ботеро"
+      ],
+      "director": "Джаред Буш, Байрон Ховард",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=CaimKeDcudE"
+    },
+    {
+      "id": 42,
+      "title": "Лука",
+      "description": "Морской монстр Лука проводит лето на итальянском побережье.",
+      "year": 2021,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.4,
+      "duration": 95,
+      "poster": "assets/images/posters/real-42.jpg",
+      "background": "assets/images/backgrounds/real-42.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=mYfJxlgR2jw",
+      "cast": [
+        "Джейкоб Трамбле",
+        "Джек Дилан Грейзер"
+      ],
+      "director": "Энрико Касароса",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=mYfJxlgR2jw"
+    },
+    {
+      "id": 43,
+      "title": "Душа",
+      "description": "Джазмен Джо Гарднер ищет смысл жизни между мирами.",
+      "year": 2020,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.0,
+      "duration": 100,
+      "poster": "assets/images/posters/real-43.jpg",
+      "background": "assets/images/backgrounds/real-43.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=xOsCke07N0Q",
+      "cast": [
+        "Джейми Фокс",
+        "Тина Фей"
+      ],
+      "director": "Пит Доктер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=xOsCke07N0Q"
+    },
+    {
+      "id": 44,
+      "title": "Я краснею",
+      "description": "Мэй превращается в красную панду, когда волнуется.",
+      "year": 2022,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.0,
+      "duration": 100,
+      "poster": "assets/images/posters/real-44.jpg",
+      "background": "assets/images/backgrounds/real-44.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=Y0sXMpDJruM",
+      "cast": [
+        "Розалин Чоу",
+        "Сандра О"
+      ],
+      "director": "Доми Ши",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=Y0sXMpDJruM"
+    },
+    {
+      "id": 45,
+      "title": "Элементарно",
+      "description": "Огонёк Эмбер и водяной Уэйд находят друг друга в городе стихий.",
+      "year": 2023,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.0,
+      "duration": 101,
+      "poster": "assets/images/posters/real-45.jpg",
+      "background": "assets/images/backgrounds/real-45.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=hXzcyx9V0xw",
+      "cast": [
+        "Леа Льюис",
+        "Мамуду Ати"
+      ],
+      "director": "Питер Сон",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=hXzcyx9V0xw"
+    },
+    {
+      "id": 46,
+      "title": "Храбрая сердцем",
+      "description": "Принцесса Мерида бросает вызов традиции.",
+      "year": 2012,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.1,
+      "duration": 93,
+      "poster": "assets/images/posters/real-46.jpg",
+      "background": "assets/images/backgrounds/real-46.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=TEHWDA_6e3M",
+      "cast": [
+        "Келли Макдональд",
+        "Билли Коннолли"
+      ],
+      "director": "Марк Эндрюс, Бренда Чепмен",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=TEHWDA_6e3M"
+    },
+    {
+      "id": 47,
+      "title": "Райя и последний дракон",
+      "description": "Воительница Райя ищет последнего дракона.",
+      "year": 2021,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.3,
+      "duration": 107,
+      "poster": "assets/images/posters/real-47.jpg",
+      "background": "assets/images/backgrounds/real-47.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=1VIZ89FEjYI",
+      "cast": [
+        "Келли Мэри Трэн",
+        "Аквафина"
+      ],
+      "director": "Дон Холл, Карлос Лопес Эстрада",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=1VIZ89FEjYI"
+    },
+    {
+      "id": 48,
+      "title": "Семейка Крудс",
+      "description": "Пещерная семья ищет новый дом.",
+      "year": 2013,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.0,
+      "duration": 98,
+      "poster": "assets/images/posters/real-48.jpg",
+      "background": "assets/images/backgrounds/real-48.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=XhBSgEXkMf8",
+      "cast": [
+        "Николас Кейдж",
+        "Эмма Стоун"
+      ],
+      "director": "Крис Сандерс, Кирк Демикко",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=XhBSgEXkMf8"
+    },
+    {
+      "id": 49,
+      "title": "Плохие парни",
+      "description": "Команда животных-преступников пытается стать хорошими.",
+      "year": 2022,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 6.8,
+      "duration": 100,
+      "poster": "assets/images/posters/real-49.jpg",
+      "background": "assets/images/backgrounds/real-49.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=mVAP3tJySdM",
+      "cast": [
+        "Сэм Рокуэлл",
+        "Марк Марон"
+      ],
+      "director": "Пьер Перифель",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=mVAP3tJySdM"
+    },
+    {
+      "id": 50,
+      "title": "Миграция",
+      "description": "Семейство уток летит в отпуск в тропики.",
+      "year": 2023,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 6.7,
+      "duration": 83,
+      "poster": "assets/images/posters/real-50.jpg",
+      "background": "assets/images/backgrounds/real-50.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=cQftg0i1W98",
+      "cast": [
+        "Кумэйл Нанджиани",
+        "Элизабет Бэнкс"
+      ],
+      "director": "Бенджамин Реннер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=cQftg0i1W98"
+    },
+    {
+      "id": 51,
+      "title": "Мегамозг",
+      "description": "Суперзлодей остаётся без соперника.",
+      "year": 2010,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.2,
+      "duration": 95,
+      "poster": "assets/images/posters/real-51.jpg",
+      "background": "assets/images/backgrounds/real-51.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=x_yV8pY8mH0",
+      "cast": [
+        "Уилл Феррелл",
+        "Брэд Питт"
+      ],
+      "director": "Том МакГрат",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=x_yV8pY8mH0"
+    },
+    {
+      "id": 52,
+      "title": "Монстры на каникулах",
+      "description": "Дракула открывает отель для монстров.",
+      "year": 2012,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.0,
+      "duration": 91,
+      "poster": "assets/images/posters/real-52.jpg",
+      "background": "assets/images/backgrounds/real-52.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=W9P_qUnWo_Y",
+      "cast": [
+        "Адам Сэндлер",
+        "Селена Гомес"
+      ],
+      "director": "Геннди Тартаковски",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=W9P_qUnWo_Y"
+    },
+    {
+      "id": 53,
+      "title": "Гринч",
+      "description": "Гринч решает украсть Рождество.",
+      "year": 2018,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 6.3,
+      "duration": 85,
+      "poster": "assets/images/posters/real-53.jpg",
+      "background": "assets/images/backgrounds/real-53.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=Bf52otOLMv0",
+      "cast": [
+        "Бенедикт Камбербэтч",
+        "Кэмерон Сили"
+      ],
+      "director": "Ярроу Чейни, Скотт Мосье",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=Bf52otOLMv0"
+    },
+    {
+      "id": 54,
+      "title": "Спирит: Душа прерий",
+      "description": "Дикий мустанг борется за свободу.",
+      "year": 2002,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.0,
+      "duration": 83,
+      "poster": "assets/images/posters/real-54.jpg",
+      "background": "assets/images/backgrounds/real-54.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=8yA4Rqk0e7s",
+      "cast": [
+        "Мэтт Деймон",
+        "Джеймс Кромвелл"
+      ],
+      "director": "Келли Эсбёри, Лорна Кук",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=8yA4Rqk0e7s"
+    },
+    {
+      "id": 55,
+      "title": "Принцесса и лягушка",
+      "description": "Тиана целует лягушонка и попадает в приключение.",
+      "year": 2009,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.1,
+      "duration": 97,
+      "poster": "assets/images/posters/real-55.jpg",
+      "background": "assets/images/backgrounds/real-55.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=uQBy6PzR3q0",
+      "cast": [
+        "Аника Нони Роуз",
+        "Бруно Кампос"
+      ],
+      "director": "Рон Клементс, Джон Маскер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=uQBy6PzR3q0"
+    },
+    {
+      "id": 56,
+      "title": "Аладдин",
+      "description": "Уличный воришка находит волшебную лампу.",
+      "year": 1992,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.0,
+      "duration": 90,
+      "poster": "assets/images/posters/real-56.jpg",
+      "background": "assets/images/backgrounds/real-56.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=eYf5xqO5o9I",
+      "cast": [
+        "Скотт Уайнгер",
+        "Робин Уильямс"
+      ],
+      "director": "Рон Клементс, Джон Маскер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=eYf5xqO5o9I"
+    },
+    {
+      "id": 57,
+      "title": "Русалочка",
+      "description": "Ариэль мечтает жить в мире людей.",
+      "year": 1989,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 7.6,
+      "duration": 83,
+      "poster": "assets/images/posters/real-57.jpg",
+      "background": "assets/images/backgrounds/real-57.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=ZG1Y0cY4u5k",
+      "cast": [
+        "Джоди Бенсон",
+        "Сэмюэл Э. Райт"
+      ],
+      "director": "Рон Клементс, Джон Маскер",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=ZG1Y0cY4u5k"
+    },
+    {
+      "id": 58,
+      "title": "Мулан",
+      "description": "Мулан идёт на войну вместо отца.",
+      "year": 1998,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.6,
+      "duration": 88,
+      "poster": "assets/images/posters/real-58.jpg",
+      "background": "assets/images/backgrounds/real-58.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=HKH7_OT2GKM",
+      "cast": [
+        "Минг-На Вен",
+        "Эдди Мерфи"
+      ],
+      "director": "Тони Бэнкрофт, Бэрри Кук",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=HKH7_OT2GKM"
+    },
+    {
+      "id": 59,
+      "title": "Тарзан",
+      "description": "Мальчик, выросший среди горилл, встречает людей.",
+      "year": 1999,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.3,
+      "duration": 88,
+      "poster": "assets/images/posters/real-59.jpg",
+      "background": "assets/images/backgrounds/real-59.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=MkZyWjQp_wY",
+      "cast": [
+        "Тони Голдвин",
+        "Мини Драйвер"
+      ],
+      "director": "Крис Бак, Кевин Лима",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=MkZyWjQp_wY"
+    },
+    {
+      "id": 60,
+      "title": "Красавица и чудовище",
+      "description": "Белль видит доброе сердце за обликом Чудовища.",
+      "year": 1991,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.0,
+      "duration": 84,
+      "poster": "assets/images/posters/real-60.jpg",
+      "background": "assets/images/backgrounds/real-60.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=tRlxkAH3ZjA",
+      "cast": [
+        "Пейдж О’Хара",
+        "Роби Бенсон"
+      ],
+      "director": "Гэри Труздэйл, Кирк Уайз",
+      "country": "США",
+      "quality": "4K",
+      "age": "6+",
+      "type": "movie",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=tRlxkAH3ZjA"
+    },
+    {
+      "id": 61,
+      "title": "Бременские музыканты",
+      "description": "Трубадур и весёлые звери отправляются в Бремен.",
+      "year": 1969,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.2,
+      "duration": 20,
+      "poster": "assets/images/posters/real-61.jpg",
+      "background": "assets/images/backgrounds/real-61.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=wX4p4Gq0q2E",
+      "cast": [
+        "Олег Анофриев",
+        "Анатолий Папанов"
+      ],
+      "director": "Инна Карева",
+      "country": "Россия",
+      "quality": "HD",
+      "age": "0+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=wX4p4Gq0q2E"
+    },
+    {
+      "id": 62,
+      "title": "Ёжик в тумане",
+      "description": "Ёжик идёт в гости к Медвежонку сквозь туман.",
+      "year": 1975,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.1,
+      "duration": 10,
+      "poster": "assets/images/posters/real-62.jpg",
+      "background": "assets/images/backgrounds/real-62.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=rd73qYdEn5E",
+      "cast": [
+        "Мария Виноградова",
+        "Вячеслав Невинный"
+      ],
+      "director": "Юрий Норштейн",
+      "country": "Россия",
+      "quality": "HD",
+      "age": "0+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=rd73qYdEn5E"
+    },
+    {
+      "id": 63,
+      "title": "Винни-Пух",
+      "description": "Медвежонок ищет мёд и друзей.",
+      "year": 1969,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.3,
+      "duration": 11,
+      "poster": "assets/images/posters/real-63.jpg",
+      "background": "assets/images/backgrounds/real-63.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=rrbGYtz2G4Y",
+      "cast": [
+        "Евгений Леонов",
+        "Ия Саввина"
+      ],
+      "director": "Фёдор Хитрук",
+      "country": "Россия",
+      "quality": "HD",
+      "age": "0+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=rrbGYtz2G4Y"
+    },
+    {
+      "id": 64,
+      "title": "Маугли",
+      "description": "Мальчик растёт в волчьей стае джунглей.",
+      "year": 1973,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.0,
+      "duration": 96,
+      "poster": "assets/images/posters/real-64.jpg",
+      "background": "assets/images/backgrounds/real-64.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=pYq0vQb0x0E",
+      "cast": [
+        "Степан Бубнов",
+        "Людмила Касаткина"
+      ],
+      "director": "Роман Давыдов",
+      "country": "Россия",
+      "quality": "4K",
+      "age": "0+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=pYq0vQb0x0E"
+    },
+    {
+      "id": 65,
+      "title": "Карлсон",
+      "description": "Малыш встречает Карлсона, который живёт на крыше.",
+      "year": 1968,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.1,
+      "duration": 19,
+      "poster": "assets/images/posters/real-65.jpg",
+      "background": "assets/images/backgrounds/real-65.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://www.youtube.com/watch?v=8V9KA66f15E",
+      "cast": [
+        "Василий Ливанов",
+        "Клара Румянова"
+      ],
+      "director": "Борис Степанцев",
+      "country": "Россия",
+      "quality": "HD",
+      "age": "0+",
+      "type": "movie",
+      "popular": false,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=8V9KA66f15E"
+    },
+    {
+      "id": 66,
+      "title": "Чебурашка",
+      "description": "Чебурашка и крокодил Гена становятся друзьями.",
+      "year": 1971,
+      "genres": [
+        "animation",
+        "fantasy"
+      ],
+      "rating": 8.2,
+      "duration": 20,
+      "poster": "assets/images/posters/real-66.jpg",
+      "background": "assets/images/backgrounds/real-66.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "trailer": "https://www.youtube.com/watch?v=1oQ8qY0zq2E",
+      "cast": [
+        "Клара Румянова",
+        "Василий Ливанов"
+      ],
+      "director": "Роман Качанов",
+      "country": "Россия",
+      "quality": "HD",
+      "age": "0+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=1oQ8qY0zq2E"
+    },
+    {
+      "id": 67,
+      "title": "Ну, погоди!",
+      "description": "Волк вечно гонится за Зайцем.",
+      "year": 1969,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 8.5,
+      "duration": 10,
+      "poster": "assets/images/posters/real-67.jpg",
+      "background": "assets/images/backgrounds/real-67.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "trailer": "https://www.youtube.com/watch?v=wX4p4Gq0q2E",
+      "cast": [
+        "Анатолий Папанов",
+        "Клара Румянова"
+      ],
+      "director": "Вячеслав Котёночкин",
+      "country": "Россия",
+      "quality": "HD",
+      "age": "0+",
+      "type": "movie",
+      "popular": false,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=wX4p4Gq0q2E"
+    },
+    {
+      "id": 68,
+      "title": "Алёша Попович и Тугарин Змей",
+      "description": "Богатырь Алёша спасает город от Тугарина.",
+      "year": 2004,
+      "genres": [
+        "animation",
+        "comedy"
+      ],
+      "rating": 7.0,
+      "duration": 72,
+      "poster": "assets/images/posters/real-68.jpg",
+      "background": "assets/images/backgrounds/real-68.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "trailer": "https://www.youtube.com/watch?v=qY0zq2EwX4p",
+      "cast": [
+        "Олег Куликович",
+        "Дмитрий Высоцкий"
+      ],
+      "director": "Константин Бронзит",
+      "country": "Россия",
+      "quality": "4K",
+      "age": "0+",
+      "type": "movie",
+      "popular": true,
+      "trending": false,
+      "price": 10,
+      "youtube": "https://www.youtube.com/watch?v=qY0zq2EwX4p"
+    },
+    {
+      "id": 69,
+      "title": "Леди Баг и Супер-Кот: 6–7 сезон",
+      "description": "Маринетт и Адриан продолжают защищать Париж как Леди Баг и Супер-Кот. В 6–7 сезонах их ждут новые силы, тайны Чудес и ещё более опасные враги.",
+      "year": 2025,
+      "genres": [
+        "animation",
+        "series",
+        "action"
+      ],
+      "rating": 7.8,
+      "duration": 22,
+      "poster": "assets/images/posters/real-69.jpg",
+      "background": "assets/images/backgrounds/real-69.jpg",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "trailer": "https://rutube.ru/video/e3cae98199bc001d2cb6b0020920df4c/",
+      "cast": [
+        "Кристина Ви",
+        "Брайс Папенбрук",
+        "Кит Сильверстайн"
+      ],
+      "director": "Томас Астрюк",
+      "country": "Франция",
+      "quality": "HD",
+      "age": "6+",
+      "type": "series",
+      "popular": true,
+      "trending": true,
+      "price": 10,
+      "youtube": "https://rutube.ru/video/e3cae98199bc001d2cb6b0020920df4c/"
+    }
+  ]
+}

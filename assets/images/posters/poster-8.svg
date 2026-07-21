@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="fade8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg8)"/>
+  
+<text x="55" y="80" fill="#22c55e" font-family="Consolas,monospace" font-size="14">01001</text>
+<text x="70" y="105" fill="#4ade80" font-family="Consolas,monospace" font-size="14">11010</text>
+<text x="45" y="130" fill="#86efac" font-family="Consolas,monospace" font-size="14">10110</text>
+<text x="80" y="155" fill="#22c55e" font-family="Consolas,monospace" font-size="14">01101</text>
+<path d="M100 60 L120 110 L100 160 L80 110 Z" fill="none" stroke="#bbf7d0" stroke-width="2"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade8)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Матрица</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

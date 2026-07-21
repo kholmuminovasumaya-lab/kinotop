@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <linearGradient id="f16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g16)"/>
+  
+<g transform="translate(200 170)">
+  <circle r="70" fill="#ef4444"/>
+  <path d="M0 -55 C-18 -5 -18 45 0 95 C18 45 18 -5 0 -55" fill="#fff"/>
+  <path d="M0 -55 L-10 -85 L10 -85 Z" fill="#fff"/>
+  <path d="M-55 130 Q0 180 55 130" fill="none" stroke="#fca5a5" stroke-width="6"/>
+</g>
+  <rect width="400" height="600" fill="url(#f16)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Оно</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

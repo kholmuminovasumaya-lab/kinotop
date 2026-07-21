@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#052e16"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="f5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g5)"/>
+  
+<g transform="translate(200 120)">
+  <rect x="-90" y="0" width="180" height="28" rx="4" fill="#86efac"/>
+  <rect x="-70" y="50" width="140" height="28" rx="4" fill="#4ade80"/>
+  <rect x="-50" y="100" width="100" height="28" rx="4" fill="#22c55e"/>
+  <rect x="-30" y="150" width="60" height="28" rx="4" fill="#16a34a"/>
+  <circle cy="210" r="16" fill="#fef08a"/>
+</g>
+  <rect width="400" height="600" fill="url(#f5)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Паразиты</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

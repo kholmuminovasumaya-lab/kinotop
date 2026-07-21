@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+    <linearGradient id="fade7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg7)"/>
+  
+<rect x="70" y="55" width="60" height="150" fill="#7f1d1d"/>
+<rect x="85" y="70" width="12" height="20" fill="#fef2f2" opacity="0.7"/>
+<rect x="105" y="70" width="12" height="20" fill="#fef2f2" opacity="0.7"/>
+<rect x="85" y="110" width="12" height="20" fill="#fef2f2" opacity="0.5"/>
+<rect x="105" y="110" width="12" height="20" fill="#fef2f2" opacity="0.5"/>
+<path d="M70 205 L100 175 L130 205" fill="#dc2626"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade7)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Сияние</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#f87171" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>

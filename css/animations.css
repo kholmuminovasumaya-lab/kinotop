@@ -1,0 +1,102 @@
+/* ============================================================
+   KIBO CINEMA — Animations & Keyframes
+   ============================================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes preloaderPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes toastOut {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(100%); }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-card) 25%, var(--color-card-hover) 50%, var(--color-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--border-radius-sm);
+}
+
+.skeleton-card { width: var(--card-width); height: var(--card-height); flex-shrink: 0; }
+
+.preloader {
+  position: fixed; inset: 0; z-index: var(--z-preloader);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background-color: var(--color-bg);
+  background-image: var(--gradient-page);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader--hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.preloader__logo {
+  font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold);
+  color: var(--color-accent); animation: preloaderPulse 1.5s ease infinite; letter-spacing: 4px;
+}
+
+.preloader__bar { width: 200px; height: 3px; margin-top: var(--space-lg); background: var(--color-card); border-radius: 2px; overflow: hidden; }
+.preloader__bar-fill { height: 100%; background: var(--gradient-accent); animation: shimmer 1s infinite; width: 60%; }
+
+.toast-container {
+  position: fixed; top: calc(var(--header-height) + var(--space-md)); right: var(--space-md);
+  z-index: var(--z-toast); display: flex; flex-direction: column; gap: var(--space-sm); pointer-events: none;
+}
+
+.toast {
+  display: flex; align-items: center; gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-glass); backdrop-filter: var(--blur-md); -webkit-backdrop-filter: var(--blur-md);
+  border: 1px solid var(--color-border); border-radius: var(--border-radius);
+  color: var(--color-text); font-size: var(--font-size-sm);
+  box-shadow: var(--shadow-lg); pointer-events: auto;
+  animation: toastIn 0.4s ease forwards; max-width: 360px;
+}
+
+.toast--success { border-left: 3px solid #22c55e; }
+.toast--error { border-left: 3px solid var(--color-accent); }
+.toast--info { border-left: 3px solid #3b82f6; }
+.toast--exit { animation: toastOut 0.3s ease forwards; }
+
+.scroll-top {
+  position: fixed; bottom: var(--space-xl); right: var(--space-xl);
+  width: 48px; height: 48px; border-radius: var(--border-radius-full);
+  background: var(--color-accent); color: var(--color-text); border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; font-size: var(--font-size-lg);
+  box-shadow: var(--shadow-neon); opacity: 0; visibility: hidden; transform: translateY(20px);
+  transition: all var(--transition-base); z-index: 900;
+}
+
+.scroll-top--visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.scroll-top:hover { transform: translateY(-4px); box-shadow: 0 0 30px var(--color-accent-glow); }

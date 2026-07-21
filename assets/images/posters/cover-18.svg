@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="g18" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="f18" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#g18)"/>
+  
+<g transform="translate(200 200)">
+  <path d="M-55 60 L0 -110 L55 60 Z" fill="#94a3b8"/>
+  <path d="M-28 60 L0 -50 L28 60 Z" fill="#e2e8f0"/>
+  <path d="M-70 70 L70 70 L60 100 L-60 100 Z" fill="#64748b"/>
+  <path d="M-130 -100 L-100 -40 L-130 -40 Z" fill="#ef4444"/>
+  <path d="M130 -100 L100 -40 L130 -40 Z" fill="#38bdf8"/>
+</g>
+  <rect width="400" height="600" fill="url(#f18)"/>
+  <text x="200" y="248" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">Игра</text><text x="200" y="276" text-anchor="middle" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="700">престолов</text>
+  <rect x="14" y="14" width="372" height="572" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" rx="12"/>
+</svg>

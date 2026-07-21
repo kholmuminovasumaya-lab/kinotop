@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="400" height="600">
+  <defs>
+    <linearGradient id="bg17" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="fade17" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="300" fill="url(#bg17)"/>
+  
+<path d="M70 170 L100 80 L130 170 Z" fill="#94a3b8"/>
+<path d="M85 170 L100 110 L115 170 Z" fill="#e2e8f0"/>
+<path d="M60 175 L140 175 L135 190 L65 190 Z" fill="#64748b"/>
+<path d="M40 70 L55 100 L40 100 Z" fill="#ef4444"/>
+<path d="M160 70 L145 100 L160 100 Z" fill="#38bdf8"/>
+
+  <rect x="0" y="200" width="200" height="100" fill="url(#fade17)"/>
+  <text x="100" y="236" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="12" font-weight="700">Игра престолов</text>
+  <rect x="8" y="8" width="184" height="284" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.55" rx="6"/>
+</svg>
