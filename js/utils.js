@@ -270,11 +270,6 @@
     showToast(type === 'movie' ? 'Открываем фильм…' : 'Открываем трейлер…', 'success', 2000);
   }
 
-  function openInAppPlayer(movie, type) {
-    // Больше не открываем пустой плеер — сразу YouTube
-    openMovieWatch(movie, type || 'movie');
-  }
-
   function goToPlayer(movie, type) {
     openMovieWatch(movie, type);
   }
@@ -293,10 +288,15 @@
         type
       );
     }
-    showToast('Открываем YouTube…', 'success', 1500);
-    // После одобрения — сразу на YouTube
+    showToast(type === 'movie' ? 'Открываем фильм…' : 'Открываем трейлер…', 'success', 1500);
     window.location.href = url;
     return true;
+  }
+
+  function openInAppPlayer(movie, type) {
+    if (!movie) return;
+    type = type || 'movie';
+    window.location.href = getBasePath() + 'pages/player.html?id=' + encodeURIComponent(movie.id) + '&type=' + encodeURIComponent(type);
   }
 
   function openMovieWatch(movie, type) {
@@ -304,13 +304,28 @@
     type = type === 'trailer' ? 'trailer' : 'movie';
 
     function doWatch() {
-      // Всегда YouTube / Rutube — без пустого встроенного плеера
-      var url = getTrailerUrl(movie);
-      if (!url) {
-        showToast('YouTube недоступен', 'error');
+      // Трейлер — только если явно type=trailer
+      if (type === 'trailer') {
+        var trailer = getTrailerUrl(movie);
+        if (!trailer) {
+          showToast('Трейлер недоступен', 'error');
+          return;
+        }
+        openExternalVideo(trailer, movie, 'trailer');
         return;
       }
-      openExternalVideo(url, movie, type);
+
+      // Смотреть фильм — ТОЛЬКО поле video (фильм), НЕ трейлер
+      var film = getMovieVideoUrl(movie);
+      if (!film) {
+        showToast('Полный фильм недоступен', 'error');
+        return;
+      }
+      if (isExternalVideoUrl(film)) {
+        openExternalVideo(film, movie, 'movie');
+        return;
+      }
+      openInAppPlayer(movie, 'movie');
     }
 
     if (global.KinoBoom && global.KinoBoom.payments) {
@@ -322,13 +337,16 @@
 
   function getMovieWatchUrl(movie, type) {
     if (!movie) return '';
-    type = type || 'trailer';
-    var trailer = getTrailerUrl(movie);
-    if (isYoutubeUrl(trailer)) return withRussianYoutube(trailer);
-    if (trailer) return trailer;
-    var video = getMovieVideoUrl(movie);
-    if (isYoutubeUrl(video)) return withRussianYoutube(video);
-    return trailer || video || '';
+    if (type === 'trailer') {
+      var trailer = getTrailerUrl(movie);
+      if (isYoutubeUrl(trailer)) return withRussianYoutube(trailer);
+      return trailer || '';
+    }
+    var film = getMovieVideoUrl(movie);
+    if (isYoutubeUrl(film)) return withRussianYoutube(film);
+    if (isExternalVideoUrl(film)) return film;
+    if (film) return getBasePath() + 'pages/player.html?id=' + movie.id + '&type=movie';
+    return '';
   }
 
   KB.utils = {

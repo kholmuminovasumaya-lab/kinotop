@@ -2,68 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>YouTube — KINOTOP</title>
-  <style>
-    html, body {
-      margin: 0; min-height: 100%;
-      background: #0b0620; color: #fff;
-      font-family: system-ui, sans-serif;
-      display: flex; align-items: center; justify-content: center;
-      text-align: center;
-    }
-    .box { padding: 24px; max-width: 420px; }
-    .box h1 { font-size: 1.25rem; margin: 0 0 8px; }
-    .box p { opacity: 0.75; margin: 0; }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <h1>Открываем YouTube…</h1>
-    <p id="msg">Подождите секунду</p>
-  </div>
+  <meta http-equiv="refresh" content="0;url=../player.html" />
   <script>
     (function () {
-      function qs(name) {
-        return new URLSearchParams(location.search).get(name);
-      }
-      function ytUrl(url) {
-        if (!url) return '';
-        var m = String(url).match(/(?:v=|\/embed\/|youtu\.be\/)([\w-]{11})/);
-        if (m) return 'https://www.youtube.com/watch?v=' + m[1] + '&hl=ru&gl=RU&cc_lang_pref=ru';
-        return url;
-      }
-      function openMovie(movie) {
-        var url = ytUrl((movie && (movie.trailer || movie.youtube)) || '');
-        if (!url) {
-          document.getElementById('msg').textContent = 'YouTube-ссылка не найдена';
-          return;
-        }
-        location.replace(url);
-      }
-      function findAndOpen(movies) {
-        var id = qs('id');
-        var movie = (movies || []).find(function (m) { return String(m.id) === String(id); });
-        openMovie(movie);
-      }
-      function loadJson() {
-        fetch('../../data/movies.json', { cache: 'no-store' })
-          .then(function (r) { return r.json(); })
-          .then(function (data) { findAndOpen((data && data.movies) || data || []); })
-          .catch(function () {
-            document.getElementById('msg').textContent = 'Не удалось загрузить каталог';
-          });
-      }
-      var s = document.createElement('script');
-      s.src = '../../js/embedded-data.js?v=ytHtml5';
-      s.onload = function () {
-        var emb = window.KinoBoom_EMBEDDED || {};
-        if (emb.movies && emb.movies.length) findAndOpen(emb.movies);
-        else loadJson();
-      };
-      s.onerror = loadJson;
-      document.head.appendChild(s);
+      var q = location.search || '';
+      location.replace('../player.html' + q);
     })();
   </script>
-</body>
+</head>
+<body></body>
 </html>
