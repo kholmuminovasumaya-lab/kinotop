@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Фильм — KINOTOP</title>
   <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="../css/variables.css" />
-  <link rel="stylesheet" href="../css/animations.css" />
-  <link rel="stylesheet" href="../css/grid.css" />
-  <link rel="stylesheet" href="../css/responsive.css" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/variables.css?v=playFix1" />
+  <link rel="stylesheet" href="../css/animations.css?v=playFix1" />
+  <link rel="stylesheet" href="../css/grid.css?v=playFix1" />
+  <link rel="stylesheet" href="../css/responsive.css?v=playFix1" />
+  <link rel="stylesheet" href="../css/style.css?v=playFix1" />
+  <style>
+    .player-page .player-wrapper { min-height: 70vh; }
+    #video-player { width: 100%; max-height: 75vh; background: #000; }
+  </style>
 </head>
 <body class="player-page">
   <div class="player-wrapper">
     <h1 class="player-title">Загрузка фильма…</h1>
-    <video id="video-player" playsinline controls></video>
+    <video id="video-player" playsinline controls preload="auto"></video>
     <div class="player-controls">
       <div class="player-progress">
         <div class="player-progress__buffered"></div>
@@ -46,6 +50,45 @@
       </div>
     </div>
   </div>
-  <script src="../js/boot.js?v=noTrailer2" data-entry="player-page.js"></script>
+  <!-- Быстрый старт фильма, если boot завис -->
+  <script>
+    (function () {
+      var started = false;
+      function qs(n) { return new URLSearchParams(location.search).get(n); }
+      function play(m) {
+        if (started || !m || !m.video) return;
+        if (/youtube\.com|youtu\.be|rutube\.ru/i.test(m.video)) return;
+        started = true;
+        var v = document.getElementById('video-player');
+        var t = document.querySelector('.player-title');
+        if (t) t.textContent = m.title || 'Фильм';
+        if (v) {
+          v.src = m.video;
+          v.play().catch(function () {});
+        }
+      }
+      function fromJson() {
+        fetch('../data/movies.json?v=playFix1').then(function (r) { return r.json(); }).then(function (data) {
+          var list = (data && data.movies) || data || [];
+          var id = qs('id');
+          play(list.find(function (x) { return String(x.id) === String(id); }));
+        }).catch(function () {});
+      }
+      setTimeout(function () {
+        if (started) return;
+        var s = document.createElement('script');
+        s.src = '../js/embedded-data.js?v=playFix1';
+        s.onload = function () {
+          var list = ((window.KinoBoom_EMBEDDED || {}).movies) || [];
+          var id = qs('id');
+          var m = list.find(function (x) { return String(x.id) === String(id); });
+          if (m) play(m); else fromJson();
+        };
+        s.onerror = fromJson;
+        document.head.appendChild(s);
+      }, 1800);
+    })();
+  </script>
+  <script src="../js/boot.js?v=playFix1" data-entry="player-page.js"></script>
 </body>
 </html>

@@ -230,7 +230,15 @@
         if (typeof onWatch === 'function') onWatch(movie);
         return;
       }
-      openPaymentModal(movie, onWatch, watchType);
+      // Cloudflare / static: нет API оплаты → сразу фильм, иначе пустой плеер
+      ensurePaymentServerReady().then(function (ready) {
+        if (!ready) {
+          grantAccess(movie.id, watchType);
+          if (typeof onWatch === 'function') onWatch(movie);
+          return;
+        }
+        openPaymentModal(movie, onWatch, watchType);
+      });
     });
   }
 
