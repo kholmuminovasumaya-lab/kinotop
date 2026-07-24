@@ -12,7 +12,7 @@
   var inAdmin = path.indexOf('/admin/') !== -1 || /\/admin(\/|$|\/index\.html)/i.test(path) || /\/admin(\/|$|\/index\.html)/i.test(href);
   var inSubfolder = inPages || inAdmin;
   var jsBase = inSubfolder ? '../js/' : 'js/';
-  var cacheBust = 'v=kinotop1';
+  var cacheBust = 'v=ytHtml4';
 
   var core = [
     'storage.js', 'utils.js', 'payments.js', 'theme.js', 'favorites.js', 'history.js',

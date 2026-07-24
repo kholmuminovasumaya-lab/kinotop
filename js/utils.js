@@ -271,9 +271,8 @@
   }
 
   function openInAppPlayer(movie, type) {
-    if (!movie) return;
-    type = type || 'movie';
-    window.location.href = getBasePath() + 'pages/player.html?id=' + encodeURIComponent(movie.id) + '&type=' + encodeURIComponent(type);
+    // Больше не открываем пустой плеер — сразу YouTube
+    openMovieWatch(movie, type || 'movie');
   }
 
   function goToPlayer(movie, type) {
@@ -287,7 +286,6 @@
   function openExternalVideo(url, movie, type) {
     if (!url) return false;
     if (isYoutubeUrl(url)) url = withRussianYoutube(url);
-    window.open(url, '_blank', 'noopener,noreferrer');
     if (global.KinoBoom && global.KinoBoom.history) {
       global.KinoBoom.history.addToHistory(
         movie,
@@ -295,7 +293,9 @@
         type
       );
     }
-    showToast(type === 'movie' ? 'Открываем фильм…' : 'Открываем трейлер…', 'success', 2000);
+    showToast('Открываем YouTube…', 'success', 1500);
+    // После одобрения — сразу на YouTube
+    window.location.href = url;
     return true;
   }
 
@@ -304,32 +304,13 @@
     type = type === 'trailer' ? 'trailer' : 'movie';
 
     function doWatch() {
-      // Трейлер — только по явному запросу
-      if (type === 'trailer') {
-        var trailer = getTrailerUrl(movie);
-        if (!trailer) {
-          showToast('Трейлер недоступен', 'error');
-          return;
-        }
-        if (isExternalVideoUrl(trailer)) {
-          openExternalVideo(trailer, movie, 'trailer');
-          return;
-        }
-        openInAppPlayer(movie, 'trailer');
+      // Всегда YouTube / Rutube — без пустого встроенного плеера
+      var url = getTrailerUrl(movie);
+      if (!url) {
+        showToast('YouTube недоступен', 'error');
         return;
       }
-
-      // Полный фильм — поле video (плеер), не дублированный YouTube-трейлер
-      var video = getMovieVideoUrl(movie);
-      if (!video) {
-        showToast('Полный фильм недоступен', 'error');
-        return;
-      }
-      if (isExternalVideoUrl(video)) {
-        openExternalVideo(video, movie, 'movie');
-        return;
-      }
-      openInAppPlayer(movie, 'movie');
+      openExternalVideo(url, movie, type);
     }
 
     if (global.KinoBoom && global.KinoBoom.payments) {
