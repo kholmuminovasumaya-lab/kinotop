@@ -4,47 +4,66 @@
   var U = KB.utils;
   var api = KB.api;
 
-  function playFilm(movie) {
+  function playFilmOnly(movie) {
     if (!movie) return false;
-    var videoUrl = String(movie.video || '').trim();
-    if (!videoUrl) {
+    var film = String(movie.video || '').trim();
+    var trailer = String(movie.trailer || movie.youtube || '').trim();
+
+    if (!film) {
       U.showToast('Полный фильм недоступен', 'error');
       return false;
     }
 
-    // Фильм на YouTube / Rutube — открываем ссылку фильма (не трейлер)
-    if (/youtube\.com|youtu\.be|rutube\.ru/i.test(videoUrl)) {
-      if (/youtube\.com|youtu\.be/i.test(videoUrl)) {
-        var m = videoUrl.match(/(?:v=|\/embed\/|youtu\.be\/)([\w-]{11})/);
-        if (m) videoUrl = 'https://www.youtube.com/watch?v=' + m[1] + '&hl=ru&gl=RU';
+    // Запрет: не открывать трейлер под видом фильма
+    if (trailer && film.split('?')[0] === trailer.split('?')[0]) {
+      U.showToast('Нет файла фильма — в каталоге только трейлер', 'error');
+      return false;
+    }
+    if (/youtube\.com|youtu\.be/i.test(film) && /trailer|трейлер|дубл/i.test(film + ' ' + (movie.title || ''))) {
+      // всё равно если video = youtube, откроем только если это НЕ тот же id что у trailer
+      var fid = (film.match(/(?:v=|youtu\.be\/)([\w-]{11})/) || [])[1];
+      var tid = (trailer.match(/(?:v=|youtu\.be\/)([\w-]{11})/) || [])[1];
+      if (fid && tid && fid === tid) {
+        U.showToast('Нет файла фильма — в каталоге только трейлер', 'error');
+        return false;
       }
+    }
+
+    if (/youtube\.com|youtu\.be|rutube\.ru/i.test(film)) {
       U.showToast('Открываем фильм…', 'success', 1200);
-      window.location.href = videoUrl;
+      window.location.href = film;
       return true;
     }
 
     if (!KB.player || !KB.player.initPlayer) {
-      U.showToast('Плеер не загружен. Обновите страницу (Ctrl+Shift+R).', 'error');
+      // Прямой fallback без плеера-обёртки
+      var el = document.getElementById('video-player');
+      if (el) {
+        el.src = film;
+        el.play().catch(function () {});
+        var titleEl = document.querySelector('.player-title');
+        if (titleEl) titleEl.textContent = movie.title || 'Фильм';
+        return true;
+      }
+      U.showToast('Плеер не загружен', 'error');
       return false;
     }
 
     var titleEl = document.querySelector('.player-title');
     if (titleEl) titleEl.textContent = movie.title || 'Фильм';
-
     KB.player.initPlayer(movie);
     var videoEl = document.getElementById('video-player');
     if (videoEl) {
+      videoEl.src = film;
       videoEl.onerror = function () {
         U.showToast('Не удалось загрузить фильм', 'error');
       };
-      var playPromise = videoEl.play();
-      if (playPromise && typeof playPromise.catch === 'function') {
-        playPromise.catch(function () {
-          U.showToast('Нажмите ▶ чтобы начать просмотр', 'info', 2500);
-        });
-      }
+      var p = videoEl.play();
+      if (p && p.catch) p.catch(function () {
+        U.showToast('Нажмите ▶ чтобы смотреть фильм', 'info', 2500);
+      });
     }
-    U.showToast('Приятного просмотра!', 'success', 1800);
+    U.showToast('Приятного просмотра!', 'success', 1600);
     return true;
   }
 
@@ -60,7 +79,7 @@
       }
 
       function afterAccess(paidMovie) {
-        playFilm(paidMovie || movie);
+        playFilmOnly(paidMovie || movie);
       }
 
       if (KB.payments && KB.payments.watchWithPayment) {

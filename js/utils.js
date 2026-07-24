@@ -301,10 +301,10 @@
 
   function openMovieWatch(movie, type) {
     if (!movie) return;
+    // По умолчанию всегда ФИЛЬМ, не трейлер
     type = type === 'trailer' ? 'trailer' : 'movie';
 
     function doWatch() {
-      // Трейлер — только если явно type=trailer
       if (type === 'trailer') {
         var trailer = getTrailerUrl(movie);
         if (!trailer) {
@@ -315,13 +315,20 @@
         return;
       }
 
-      // Смотреть фильм — ТОЛЬКО поле video (фильм), НЕ трейлер
+      // ФИЛЬМ: только movie.video. Трейлер/youtube-trailer ЗАПРЕЩЕНЫ
       var film = getMovieVideoUrl(movie);
+      var trailerUrl = getTrailerUrl(movie);
       if (!film) {
         showToast('Полный фильм недоступен', 'error');
         return;
       }
-      if (isExternalVideoUrl(film)) {
+      // Если video случайно = ссылка трейлера — не открываем
+      if (trailerUrl && film.split('&')[0] === trailerUrl.split('&')[0]) {
+        showToast('В каталоге нет файла фильма (только трейлер)', 'error');
+        return;
+      }
+      if (isYoutubeUrl(film) || /rutube\.ru/i.test(film)) {
+        // YouTube в video — только если это НЕ тот же URL что trailer
         openExternalVideo(film, movie, 'movie');
         return;
       }

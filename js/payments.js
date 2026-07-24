@@ -224,7 +224,7 @@
 
   function ensureAccessThenWatch(movie, onWatch, watchType) {
     if (!movie) return;
-    watchType = watchType || 'trailer';
+    watchType = watchType === 'trailer' ? 'trailer' : 'movie';
     checkAccess(movie.id, watchType).then(function (hasAccess) {
       if (hasAccess) {
         if (typeof onWatch === 'function') onWatch(movie);
@@ -651,7 +651,7 @@
   }
 
   function openPaymentModal(movie, onPaid, watchType) {
-    watchType = watchType || 'trailer';
+    watchType = watchType === 'trailer' ? 'trailer' : 'movie';
     findPendingForMovie(movie.id, watchType).then(function (info) {
       if (info && info.pending && info.orderId) {
         openPendingReviewModal(movie, watchType, info.orderId, onPaid);
@@ -665,7 +665,7 @@
 
   function watchWithPayment(movie, onWatch, watchType) {
     if (!movie) return;
-    ensureAccessThenWatch(movie, onWatch, watchType || 'trailer');
+    ensureAccessThenWatch(movie, onWatch, watchType === 'trailer' ? 'trailer' : 'movie');
   }
 
   syncGrantsFromServer();

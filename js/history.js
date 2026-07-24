@@ -39,7 +39,7 @@
 
   function addToHistory(movie, progress, type, duration) {
     if (progress === undefined) progress = 0;
-    if (type === undefined) type = 'trailer';
+    if (type === undefined) type = 'movie';
     var history = storage.getHistory().filter(function (h) {
       return !(h.id === movie.id && h.type === type);
     });
