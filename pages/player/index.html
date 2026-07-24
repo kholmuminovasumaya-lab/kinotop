@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>YouTube — KINOTOP</title>
-  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
   <style>
     html, body {
       margin: 0; min-height: 100%;
@@ -48,7 +47,7 @@
         openMovie(movie);
       }
       function loadJson() {
-        fetch('../data/movies.json', { cache: 'no-store' })
+        fetch('../../data/movies.json', { cache: 'no-store' })
           .then(function (r) { return r.json(); })
           .then(function (data) { findAndOpen((data && data.movies) || data || []); })
           .catch(function () {
@@ -56,7 +55,7 @@
           });
       }
       var s = document.createElement('script');
-      s.src = '../js/embedded-data.js?v=ytHtml5';
+      s.src = '../../js/embedded-data.js?v=ytHtml5';
       s.onload = function () {
         var emb = window.KinoBoom_EMBEDDED || {};
         if (emb.movies && emb.movies.length) findAndOpen(emb.movies);

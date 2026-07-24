@@ -323,15 +323,12 @@
   function getMovieWatchUrl(movie, type) {
     if (!movie) return '';
     type = type || 'trailer';
-    if (type === 'trailer') {
-      var trailer = getTrailerUrl(movie);
-      if (isYoutubeUrl(trailer)) return withRussianYoutube(trailer);
-      return trailer || '';
-    }
+    var trailer = getTrailerUrl(movie);
+    if (isYoutubeUrl(trailer)) return withRussianYoutube(trailer);
+    if (trailer) return trailer;
     var video = getMovieVideoUrl(movie);
-    if (isYoutubeUrl(video)) return buildYoutubeWatchUrl(movie, 'movie');
-    if (video) return getBasePath() + 'pages/player.html?id=' + movie.id + '&type=movie';
-    return '';
+    if (isYoutubeUrl(video)) return withRussianYoutube(video);
+    return trailer || video || '';
   }
 
   KB.utils = {
