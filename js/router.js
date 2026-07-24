@@ -4,6 +4,16 @@
   var U = KB.utils;
 
   var BRAND = 'KINOTOP';
+  var PREMIUM_BADGE =
+    '<span class="header__premium-badge" title="KINOTOP Premium" aria-label="Premium">' +
+    '<svg viewBox="0 0 64 64" width="22" height="22" aria-hidden="true">' +
+    '<defs><linearGradient id="kbPrem" x1="0" y1="1" x2="1" y2="0">' +
+    '<stop offset="0%" stop-color="#7dd3fc"/><stop offset="45%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#f0abfc"/>' +
+    '</linearGradient></defs>' +
+    '<circle cx="32" cy="32" r="30" fill="url(#kbPrem)"/>' +
+    '<path fill="#fff" d="M32 10l5.2 12.2 13.3 1.1-10.2 8.4 3.2 12.9L32 37.8 20.5 44.6l3.2-12.9-10.2-8.4 13.3-1.1z"/>' +
+    '<path fill="#fff" d="M28 34l-6 2 10 6 12-16-3-2-9 12z" opacity=".35"/>' +
+    '</svg></span>';
 
   var NAV = [
     { href: 'index.html', label: 'Главная', page: 'home' },
@@ -20,12 +30,15 @@
     var header = document.querySelector('.header');
     if (!header) return;
     header.innerHTML = '<div class="header__left"><a href="' + base + 'index.html" class="header__logo">' +
-      '<img src="' + base + 'assets/logo/logo-boom.png" alt="' + BRAND + '" width="36" height="36" class="header__logo-icon" /><span>' + BRAND + '</span></a>' +
+      '<img src="' + base + 'assets/logo/logo-boom.png" alt="' + BRAND + '" width="36" height="36" class="header__logo-icon" />' +
+      '<span class="header__brand-name">' + BRAND + '</span>' + PREMIUM_BADGE +
+      '</a>' +
       '<nav class="header__nav" id="main-nav" aria-hidden="true">' +
       '<div class="header__nav-top">' +
       '<a href="' + base + 'index.html" class="header__nav-brand">' +
       '<img src="' + base + 'assets/logo/logo-boom.png" alt="" width="32" height="32" />' +
-      '<span>' + BRAND + '</span></a>' +
+      '<span>' + BRAND + '</span>' + PREMIUM_BADGE +
+      '</a>' +
       '<button type="button" class="header__nav-close" id="nav-close-btn" aria-label="Закрыть меню">&times;</button>' +
       '</div>' +
       '<form class="header__search header__search--mobile" onsubmit="return false;">' +
@@ -94,7 +107,7 @@
     var footer = document.querySelector('.footer');
     if (!footer) return;
     footer.innerHTML =
-      '<div class="footer__logo">' + BRAND + '</div>' +
+      '<div class="footer__logo" style="display:inline-flex;align-items:center;gap:6px;">' + BRAND + PREMIUM_BADGE + '</div>' +
       '<p style="margin-top:8px;"><a href="' + U.getAdminPath() + '" style="color:var(--color-text-secondary);font-size:12px;">Админ-панель</a></p>';
   }
 
