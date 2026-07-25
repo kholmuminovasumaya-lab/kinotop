@@ -1,29 +1,15 @@
-# Secrets
 .env
-**/.env
-*.pem
-*.key
-
-# Local DB & runtime data
+.env.local
+*.db
 data/kinobro.db
-data/kinobro.db-*
-data/telegram_config.json
 data/receipts/
-data/*.db
-
-# OS / junk
-Thumbs.db
-Desktop.ini
-*.lnk
-_diag_*
-.DS_Store
-
-# Python
+data/telegram_config.json
+.wrangler/
+node_modules/
+.git/
 __pycache__/
 *.pyc
-.venv/
-venv/
-
-# Editor
-.vscode/
-.idea/
+.DS_Store
+Steam.lnk
+_diag_*
+.dev.vars

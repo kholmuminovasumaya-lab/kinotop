@@ -288,14 +288,15 @@
         type || 'movie'
       );
     }
-    showToast('Открываем YouTube…', 'success', 1200);
+    showToast(type === 'trailer' ? 'Открываем трейлер…' : 'Открываем фильм…', 'success', 1200);
     window.location.href = url;
     return true;
   }
 
   function openInAppPlayer(movie, type) {
-    // Не пустой плеер — сразу YouTube
-    openMovieWatch(movie, type || 'movie');
+    if (!movie) return;
+    type = type || 'movie';
+    window.location.href = getBasePath() + 'pages/player.html?id=' + encodeURIComponent(movie.id) + '&type=' + encodeURIComponent(type);
   }
 
   function openMovieWatch(movie, type) {
@@ -303,13 +304,27 @@
     type = type === 'trailer' ? 'trailer' : 'movie';
 
     function doWatch() {
-      // После оплаты / доступа — всегда YouTube (trailer / youtube)
-      var url = getTrailerUrl(movie);
-      if (!url) {
-        showToast('YouTube недоступен', 'error');
+      if (type === 'trailer') {
+        var trailerUrl = getTrailerUrl(movie);
+        if (!trailerUrl) {
+          showToast('Трейлер недоступен', 'error');
+          return;
+        }
+        openExternalVideo(trailerUrl, movie, 'trailer');
         return;
       }
-      openExternalVideo(url, movie, type);
+
+      // Полный фильм — внутренний плеер (поле video), не YouTube-трейлер
+      var video = getMovieVideoUrl(movie);
+      if (!video) {
+        showToast('Фильм недоступен', 'error');
+        return;
+      }
+      if (isExternalVideoUrl(video)) {
+        openExternalVideo(video, movie, 'movie');
+        return;
+      }
+      openInAppPlayer(movie, 'movie');
     }
 
     if (global.KinoBoom && global.KinoBoom.payments) {
@@ -321,9 +336,16 @@
 
   function getMovieWatchUrl(movie, type) {
     if (!movie) return '';
-    var url = getTrailerUrl(movie);
-    if (isYoutubeUrl(url)) return withRussianYoutube(url);
-    return url || '';
+    type = type === 'trailer' ? 'trailer' : 'movie';
+    if (type === 'trailer') {
+      var trailer = getTrailerUrl(movie);
+      if (isYoutubeUrl(trailer)) return withRussianYoutube(trailer);
+      return trailer || '';
+    }
+    var video = getMovieVideoUrl(movie);
+    if (isYoutubeUrl(video)) return withRussianYoutube(video);
+    if (video) return getBasePath() + 'pages/player.html?id=' + movie.id + '&type=movie';
+    return '';
   }
 
   KB.utils = {
@@ -356,6 +378,10 @@
     buildYoutubeWatchUrl: buildYoutubeWatchUrl,
     getMovieWatchUrl: getMovieWatchUrl,
     getTrailerUrl: getTrailerUrl,
+    getMovieVideoUrl: getMovieVideoUrl,
+    isExternalVideoUrl: isExternalVideoUrl,
+    openExternalVideo: openExternalVideo,
+    openInAppPlayer: openInAppPlayer,
     extractYoutubeId: extractYoutubeId,
   };
 })(window);

@@ -335,17 +335,14 @@
   function setModalIPaid(overlay, movie, price, watchType, payMethod, useTelegram, onPaid) {
     var body = overlay.querySelector('.payment-modal');
     if (!body) return;
-    var premiumIcon = (KB.router && KB.router.PREMIUM_BADGE)
-      ? KB.router.PREMIUM_BADGE.replace('header__premium-badge', 'header__premium-badge payment-receipt__premium')
-      : '<span class="payment-receipt__premium" aria-hidden="true">★</span>';
     body.innerHTML =
       '<p class="payment-modal__movie">«' + movie.title + '»</p>' +
       '<div class="payment-modal__price-wrap">' + U.getPriceTagHtml(price, 'md') + '</div>' +
       '<p class="payment-modal__hint payment-modal__hint--center">Оплатите <strong>' + price + 'р</strong>, затем загрузите чек:</p>' +
       '<label class="payment-receipt" id="pay-receipt-box">' +
       '<input type="file" id="pay-receipt-input" accept="image/*,.pdf,application/pdf" hidden />' +
-      '<span class="payment-receipt__icon payment-receipt__icon--premium" aria-hidden="true">' + premiumIcon + '</span>' +
-      '<span class="payment-receipt__title">Загрузить чек ' + premiumIcon + '</span>' +
+      '<span class="payment-receipt__icon" aria-hidden="true"></span>' +
+      '<span class="payment-receipt__title">Загрузить чек</span>' +
       '<span class="payment-receipt__sub">JPG, PNG или PDF · до 6 МБ</span>' +
       '<img class="payment-receipt__preview" id="pay-receipt-preview" alt="" hidden />' +
       '<span class="payment-receipt__name" id="pay-receipt-name" hidden></span>' +
@@ -436,16 +433,16 @@
       '<p class="payment-modal__movie">«' + movie.title + '»</p>' +
       '<div class="payment-modal__price-wrap">' + U.getPriceTagHtml(price, 'md') + '</div>' +
       '<div class="payment-modal__success-icon" aria-hidden="true"></div>' +
-      '<p class="payment-modal__confirmed-text">Оплата одобрена. Сейчас откроется YouTube</p>' +
+      '<p class="payment-modal__confirmed-text">Оплата одобрена. Сейчас откроется фильм</p>' +
       '<button type="button" class="payment-modal__pay-btn payment-modal__pay-btn--confirmed" id="pay-confirmed-btn">' +
       '<span class="payment-modal__pay-icon payment-modal__pay-icon--check" aria-hidden="true"></span>' +
-      'СМОТРЕТЬ НА YOUTUBE</button>' +
+      'СМОТРЕТЬ ФИЛЬМ</button>' +
       '<p class="payment-modal__secure"><span class="payment-modal__shield" aria-hidden="true"></span>Безопасная оплата</p>';
     var btn = overlay.querySelector('#pay-confirmed-btn');
     if (btn) {
       btn.onclick = function () {
         closeModal(overlay);
-        U.showToast('Открываем YouTube…', 'success');
+        U.showToast('Открываем фильм…', 'success');
         if (typeof onPaid === 'function') onPaid(movie);
       };
     }

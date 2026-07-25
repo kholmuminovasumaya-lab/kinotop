@@ -1,4 +1,4 @@
-﻿(function (global) {
+(function (global) {
   'use strict';
   var KB = global.KinoBoom;
   var U = KB.utils;

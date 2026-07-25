@@ -4,28 +4,36 @@
   var U = KB.utils;
   var api = KB.api;
 
-  function goYoutube(movie) {
+  function playFilmOnPage(movie) {
     if (!movie) return;
-    var url = '';
-    if (U.getTrailerUrl) url = U.getTrailerUrl(movie);
-    if (!url) url = String(movie.trailer || movie.youtube || '').trim();
-    if (!url) {
-      U.showToast('YouTube недоступен', 'error');
+    var videoUrl = U.getMovieVideoUrl ? U.getMovieVideoUrl(movie) : String(movie.video || '').trim();
+    if (!videoUrl) {
+      U.showToast('Фильм недоступен', 'error');
       window.location.href = U.getBasePath() + 'index.html';
       return;
     }
-    if (/youtube\.com|youtu\.be/i.test(url)) {
-      var m = String(url).match(/(?:v=|\/embed\/|youtu\.be\/)([\w-]{11})/);
-      if (m) url = 'https://www.youtube.com/watch?v=' + m[1] + '&hl=ru&gl=RU&cc_lang_pref=ru';
+    if (U.isExternalVideoUrl && U.isExternalVideoUrl(videoUrl) && U.openExternalVideo) {
+      U.openExternalVideo(videoUrl, movie, 'movie');
+      return;
     }
-    U.showToast('Открываем YouTube…', 'success', 1000);
-    window.location.href = url;
+    if (KB.player && KB.player.initPlayer) {
+      KB.player.initPlayer(movie);
+      U.hidePreloader();
+      return;
+    }
+    var video = document.getElementById('video-player');
+    var titleEl = document.querySelector('.player-title');
+    if (titleEl) titleEl.textContent = movie.title || 'Фильм';
+    if (video) {
+      video.src = videoUrl;
+      video.play().catch(function () {});
+    }
+    U.hidePreloader();
   }
 
   KB.playerPageInit = function () {
     var id = U.getQueryParam('id');
     KB.router.initPage('player');
-    U.hidePreloader();
 
     api.getMovieById(id).then(function (movie) {
       if (!movie) {
@@ -34,7 +42,7 @@
       }
 
       function afterAccess(paidMovie) {
-        goYoutube(paidMovie || movie);
+        playFilmOnPage(paidMovie || movie);
       }
 
       if (KB.payments && KB.payments.watchWithPayment) {
