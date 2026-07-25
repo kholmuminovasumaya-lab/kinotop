@@ -288,7 +288,7 @@
         type || 'movie'
       );
     }
-    showToast(type === 'trailer' ? 'Открываем трейлер…' : 'Открываем фильм…', 'success', 1200);
+    showToast('Открываем YouTube…', 'success', 1200);
     window.location.href = url;
     return true;
   }
@@ -304,27 +304,13 @@
     type = type === 'trailer' ? 'trailer' : 'movie';
 
     function doWatch() {
-      if (type === 'trailer') {
-        var trailerUrl = getTrailerUrl(movie);
-        if (!trailerUrl) {
-          showToast('Трейлер недоступен', 'error');
-          return;
-        }
-        openExternalVideo(trailerUrl, movie, 'trailer');
+      // Cloudflare: сразу YouTube (trailer/youtube), без пустого плеера
+      var url = getTrailerUrl(movie);
+      if (!url) {
+        showToast(type === 'movie' ? 'Фильм недоступен' : 'Трейлер недоступен', 'error');
         return;
       }
-
-      // Полный фильм — внутренний плеер (поле video), не YouTube-трейлер
-      var video = getMovieVideoUrl(movie);
-      if (!video) {
-        showToast('Фильм недоступен', 'error');
-        return;
-      }
-      if (isExternalVideoUrl(video)) {
-        openExternalVideo(video, movie, 'movie');
-        return;
-      }
-      openInAppPlayer(movie, 'movie');
+      openExternalVideo(url, movie, type);
     }
 
     if (global.KinoBoom && global.KinoBoom.payments) {
@@ -336,16 +322,9 @@
 
   function getMovieWatchUrl(movie, type) {
     if (!movie) return '';
-    type = type === 'trailer' ? 'trailer' : 'movie';
-    if (type === 'trailer') {
-      var trailer = getTrailerUrl(movie);
-      if (isYoutubeUrl(trailer)) return withRussianYoutube(trailer);
-      return trailer || '';
-    }
-    var video = getMovieVideoUrl(movie);
-    if (isYoutubeUrl(video)) return withRussianYoutube(video);
-    if (video) return getBasePath() + 'pages/player.html?id=' + movie.id + '&type=movie';
-    return '';
+    var url = getTrailerUrl(movie);
+    if (isYoutubeUrl(url)) return withRussianYoutube(url);
+    return url || '';
   }
 
   KB.utils = {

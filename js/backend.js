@@ -42,22 +42,33 @@
 
   function probeBase(base) {
     var url = normalizeBase(base) + 'api/health';
-    return fetch(url, { method: 'GET', cache: 'no-store' }).then(function (r) {
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { try { ctrl.abort(); } catch (e) {} }, 2500) : null;
+    return fetch(url, { method: 'GET', cache: 'no-store', signal: ctrl ? ctrl.signal : undefined }).then(function (r) {
+      if (timer) clearTimeout(timer);
       if (!r.ok) throw new Error('API ' + r.status);
       return r.json();
     }).then(function (res) {
       if (!res || !res.ok) throw new Error('health not ok');
       return normalizeBase(base);
+    }).catch(function (err) {
+      if (timer) clearTimeout(timer);
+      throw err;
     });
   }
 
   function discoverApiBase() {
+    var host = String((global.location && global.location.hostname) || '').toLowerCase();
+    var isLocalHost = host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0' || host === '';
     var origin = currentOriginBase();
     var candidates = [];
     if (origin) candidates.push(origin);
-    FALLBACK_BASES.forEach(function (b) {
-      if (candidates.indexOf(b) === -1) candidates.push(b);
-    });
+    // Локальные fallback только с localhost — иначе Cloudflare ловит 127.0.0.1 и зависает
+    if (isLocalHost) {
+      FALLBACK_BASES.forEach(function (b) {
+        if (candidates.indexOf(b) === -1) candidates.push(b);
+      });
+    }
 
     function tryNext(i) {
       if (i >= candidates.length) return Promise.reject(new Error('server not found'));

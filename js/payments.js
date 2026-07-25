@@ -433,16 +433,16 @@
       '<p class="payment-modal__movie">«' + movie.title + '»</p>' +
       '<div class="payment-modal__price-wrap">' + U.getPriceTagHtml(price, 'md') + '</div>' +
       '<div class="payment-modal__success-icon" aria-hidden="true"></div>' +
-      '<p class="payment-modal__confirmed-text">Оплата одобрена. Сейчас откроется фильм</p>' +
+      '<p class="payment-modal__confirmed-text">Оплата одобрена. Сейчас откроется YouTube</p>' +
       '<button type="button" class="payment-modal__pay-btn payment-modal__pay-btn--confirmed" id="pay-confirmed-btn">' +
       '<span class="payment-modal__pay-icon payment-modal__pay-icon--check" aria-hidden="true"></span>' +
-      'СМОТРЕТЬ ФИЛЬМ</button>' +
+      'СМОТРЕТЬ НА YOUTUBE</button>' +
       '<p class="payment-modal__secure"><span class="payment-modal__shield" aria-hidden="true"></span>Безопасная оплата</p>';
     var btn = overlay.querySelector('#pay-confirmed-btn');
     if (btn) {
       btn.onclick = function () {
         closeModal(overlay);
-        U.showToast('Открываем фильм…', 'success');
+        U.showToast('Открываем YouTube…', 'success');
         if (typeof onPaid === 'function') onPaid(movie);
       };
     }
