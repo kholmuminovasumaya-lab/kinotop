@@ -41,7 +41,7 @@
         location.replace(url);
       }
       function fromJson() {
-        fetch('../data/movies.json?v=ytGo1').then(function (r) { return r.json(); }).then(function (data) {
+        fetch('../data/movies.json?v=ytGo2').then(function (r) { return r.json(); }).then(function (data) {
           var list = (data && data.movies) || data || [];
           open(list.find(function (x) { return String(x.id) === String(qs('id')); }));
         }).catch(function () {
@@ -49,7 +49,7 @@
         });
       }
       var s = document.createElement('script');
-      s.src = '../js/embedded-data.js?v=ytGo1';
+      s.src = '../js/embedded-data.js?v=ytGo2';
       s.onload = function () {
         var list = ((window.KinoBoom_EMBEDDED || {}).movies) || [];
         var m = list.find(function (x) { return String(x.id) === String(qs('id')); });
